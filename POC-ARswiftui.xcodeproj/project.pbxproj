@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C810FF23284FBBBB00B4BCAF /* CollectionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C810FF22284FBBBB00B4BCAF /* CollectionCellView.swift */; };
+		C810FF27284FBF3B00B4BCAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C810FF26284FBF3B00B4BCAF /* ColorExtension.swift */; };
+		C830325A284FF29E00683C6F /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8303259284FF29E00683C6F /* CellContent.swift */; };
 		DF8D0D75284E8C9500355702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D74284E8C9500355702 /* AppDelegate.swift */; };
 		DF8D0D77284E8C9500355702 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D76284E8C9500355702 /* ContentView.swift */; };
 		DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D78284E8C9500355702 /* Experience.rcproject */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C810FF22284FBBBB00B4BCAF /* CollectionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellView.swift; sourceTree = "<group>"; };
+		C810FF26284FBF3B00B4BCAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C8303259284FF29E00683C6F /* CellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
 		DF8D0D71284E8C9500355702 /* POC-ARswiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-ARswiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8D0D74284E8C9500355702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF8D0D76284E8C9500355702 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 				DF8D0D84284E8F5300355702 /* Info.plist */,
 				DF8D0D74284E8C9500355702 /* AppDelegate.swift */,
 				DF8D0D76284E8C9500355702 /* ContentView.swift */,
+				C8303259284FF29E00683C6F /* CellContent.swift */,
+				C810FF26284FBF3B00B4BCAF /* ColorExtension.swift */,
+				C810FF22284FBBBB00B4BCAF /* CollectionCellView.swift */,
 				DF8D0D78284E8C9500355702 /* Experience.rcproject */,
 				DF8D0D7A284E8C9700355702 /* Assets.xcassets */,
 				DF8D0D7C284E8C9700355702 /* Preview Content */,
@@ -144,7 +153,10 @@
 			files = (
 				DF8D0D77284E8C9500355702 /* ContentView.swift in Sources */,
 				DF8D0D75284E8C9500355702 /* AppDelegate.swift in Sources */,
+				C810FF23284FBBBB00B4BCAF /* CollectionCellView.swift in Sources */,
 				DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */,
+				C810FF27284FBF3B00B4BCAF /* ColorExtension.swift in Sources */,
+				C830325A284FF29E00683C6F /* CellContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"POC-ARswiftui/Preview Content\"";
-				DEVELOPMENT_TEAM = TX88D8XM39;
+				DEVELOPMENT_TEAM = 87UTUM347S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "POC-ARswiftui/Info.plist";
@@ -305,7 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"POC-ARswiftui/Preview Content\"";
-				DEVELOPMENT_TEAM = TX88D8XM39;
+				DEVELOPMENT_TEAM = 87UTUM347S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "POC-ARswiftui/Info.plist";
