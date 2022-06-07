@@ -1,0 +1,112 @@
+[
+  {
+    "libraryIdentifier" : "2b82b106094f8eb10a242fd76412b5f7",
+    "format" : "model",
+    "displayName" : "dirt.usdz"
+  },
+  {
+    "libraryIdentifier" : "6ec1cfc5eb12535de36cdc67bbd89549",
+    "format" : "model",
+    "displayName" : "dirt1.usdz"
+  },
+  {
+    "libraryIdentifier" : "520bec9c927f59171767b39974496225",
+    "format" : "model",
+    "displayName" : "dirt1.usdz"
+  },
+  {
+    "libraryIdentifier" : "872b2a15c9bfb63ca2a46680c65de93b",
+    "format" : "model",
+    "displayName" : "air.usdz"
+  },
+  {
+    "libraryIdentifier" : "f3bdfed2b478672ea5bca520ed819cee",
+    "format" : "model",
+    "displayName" : "energy.usdz"
+  },
+  {
+    "libraryIdentifier" : "5e561b5fdeced977ba4134d93d5aa847",
+    "format" : "model",
+    "displayName" : "fire.usdz"
+  },
+  {
+    "libraryIdentifier" : "b181f9887d6e5beddc32d6afe180e3e2",
+    "format" : "model",
+    "displayName" : "magma.usdz"
+  },
+  {
+    "libraryIdentifier" : "bee901c617df32d5fb7d5c1fb096d70f",
+    "format" : "model",
+    "displayName" : "mud.usdz"
+  },
+  {
+    "libraryIdentifier" : "e4fea3c2bfe7ffc9f2473913e61cf196",
+    "format" : "model",
+    "displayName" : "steam.usdz"
+  },
+  {
+    "libraryIdentifier" : "8a69205736e45c0d126463d6d6c987eb",
+    "format" : "model",
+    "displayName" : "water.usdz"
+  },
+  {
+    "libraryIdentifier" : "fa0243a7f6a9a68fee080a6dda550828",
+    "format" : "image",
+    "displayName" : "IMG_4586.png"
+  },
+  {
+    "libraryIdentifier" : "3daa963fa353bc0bfc7c6243b93deb00",
+    "format" : "model",
+    "displayName" : "energy.usdz"
+  },
+  {
+    "libraryIdentifier" : "45e27a53caa6395b26e4235cbc636bda",
+    "format" : "model",
+    "displayName" : "air.usdz"
+  },
+  {
+    "libraryIdentifier" : "91769f4a04a98fc2784ac5a7c7e7dd48",
+    "format" : "model",
+    "displayName" : "dirt.usdz"
+  },
+  {
+    "libraryIdentifier" : "edd43462dee989e3d37e4d86da204975",
+    "format" : "model",
+    "displayName" : "fire.usdz"
+  },
+  {
+    "libraryIdentifier" : "bebefa4d551643fab7e84dccf256e720",
+    "format" : "model",
+    "displayName" : "lava.usdz"
+  },
+  {
+    "libraryIdentifier" : "e304028cd82ccf219878e0f002d444d9",
+    "format" : "model",
+    "displayName" : "magma.usdz"
+  },
+  {
+    "libraryIdentifier" : "5731c62422f0aed5a57f0dc177abed8c",
+    "format" : "model",
+    "displayName" : "mud.usdz"
+  },
+  {
+    "libraryIdentifier" : "006c3c2438e3af67980bab098fdc1741",
+    "format" : "model",
+    "displayName" : "steam.usdz"
+  },
+  {
+    "libraryIdentifier" : "2c0f6604c1f1728ea18aff82d35b18d8",
+    "format" : "model",
+    "displayName" : "water.usdz"
+  },
+  {
+    "libraryIdentifier" : "1389a5c823d111f5b5ded31a7f0dca00",
+    "format" : "model",
+    "displayName" : "rain.usdz"
+  },
+  {
+    "libraryIdentifier" : "f71022e7515e3ac4cd57bde69343c57c",
+    "format" : "model",
+    "displayName" : "dust.usdz"
+  }
+]
