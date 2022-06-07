@@ -5,13 +5,16 @@
   },
   "resources" : [
     {
-      "filename" : "bilhete.arreferenceimage"
+      "filename" : "air.arreferenceimage"
     },
     {
-      "filename" : "oficina1.arreferenceimage"
+      "filename" : "dirt.arreferenceimage"
     },
     {
-      "filename" : "tia.arreferenceimage"
+      "filename" : "fire.arreferenceimage"
+    },
+    {
+      "filename" : "water.arreferenceimage"
     }
   ]
 }

@@ -19,10 +19,12 @@ struct ARViewContainer: UIViewRepresentable {
     class Coordinator: NSObject, ARSessionDelegate{
         var parent: ARViewContainer
         var objetos = [Entity]()
-        var imageAnchors = [ARAnchor]()
-        var anchorEntites = [AnchorEntity]()
         var mixResult = ""
         var mixing = false
+        var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
+        var anchorMixName: String = ""
+        var imageNames = ["water", "air", "fire", "dirt"]
+
         
         
         init(parent: ARViewContainer) {
@@ -37,15 +39,15 @@ struct ARViewContainer: UIViewRepresentable {
                 if let imageName = imageAnchor.name {
                     var cartaObjeto = ""
                     let entity = AnchorEntity(anchor: imageAnchor)
-                    anchorEntites.append(entity)
-                    
-                    if imageName == "oficina1" {
-                        cartaObjeto = "water"
-                    } else if imageName == "bilhete" {
-                        cartaObjeto = "fire"
-                    } else {
-                        cartaObjeto = "dirt"
+                                 
+                    for name in imageNames {
+                        if imageName == name {
+                            cartaObjeto = name
+                            entity.name = name
+                        }
                     }
+                    
+                    entidadesDict[cartaObjeto] = entity
                     
                     if let scene = try? Experience.loadElements() {
                         
@@ -72,37 +74,49 @@ struct ARViewContainer: UIViewRepresentable {
                     mixing = true
                     let positionFirst = anchors[0].transform.columns.3
                     let positionSecond = anchors[1].transform.columns.3
-                    var positionMixX: Float = 0
-                    var positionMixZ: Float = positionFirst.z - positionSecond.z
                     
-                    if positionFirst.z < positionSecond.z {
-                        positionMixZ = positionSecond.z - positionFirst.z
-                    } else {
-                        positionMixZ = positionFirst.z - positionSecond.z
-                    }
+                    let positionMixX: Float = positionSecond.x - positionFirst.x
+                    let positionMixZ: Float = positionSecond.z - positionFirst.z
                 
-                    if (anchors[0].name == "tia" && anchors[1].name == "bilhete") || ((anchors[0].name == "bilhete" && anchors[1].name == "tia")) {
+                    if (anchors[0].name == "water" && anchors[1].name == "dirt") || ((anchors[0].name == "dirt" && anchors[1].name == "water")) {
                         mixResult = "mud"
                     }
+                    
+                    
+                    mixResult = (anchors[0].name ?? "water") + (anchors[1].name ?? "dirt")
                                 
                     if let scene = try? Experience.loadElements() {
                         if let obj = scene.findEntity(named: mixResult) {
                             //obj.components.set(pointLight)
                             obj.position.y = 0.1
-                            obj.position.x = 0 // positivo para direita
+                            obj.position.x = positionMixX/2 // positivo para direita
                             obj.position.z = positionMixZ/2 // positivo pra baixo
-                            print(positionFirst)
-                            print(positionSecond)
-                            print(obj.position.x, obj.position.z)
                             objetos.append(obj)
-                            anchorEntites[0].addChild(obj)
+                            if let nome = anchors[0].name, let entidadeEle = entidadesDict[nome] {
+                                entidadeEle.addChild(obj)
+                                anchorMixName = nome
+                            }
+                        } else {
+                            mixResult =  (anchors[1].name ?? "dirt") + (anchors[0].name ?? "water")
+                            if let obj = scene.findEntity(named: mixResult) {
+                                //obj.components.set(pointLight)
+                                obj.position.y = 0.1
+                                obj.position.x = positionMixX/2 // positivo para direita
+                                obj.position.z = positionMixZ/2 // positivo pra baixo
+                                objetos.append(obj)
+                                if let nome = anchors[0].name, let entidadeEle = entidadesDict[nome] {
+                                    entidadeEle.addChild(obj)
+                                    anchorMixName = nome
+                                }
+                            }
                         }
                     }
                 }
             } else {
                 mixing = false
-                if let removeMix = anchorEntites[0].findEntity(named: "mud") {
-                    anchorEntites[0].removeChild(removeMix)
+                
+                if let entidadeEle = entidadesDict[anchorMixName], let removeMix = entidadeEle.findEntity(named: mixResult) {
+                    entidadeEle.removeChild(removeMix)
                 }
             }
             
