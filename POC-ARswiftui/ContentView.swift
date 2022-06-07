@@ -25,10 +25,11 @@ struct ARViewContainer: UIViewRepresentable {
         var anchorMixName: String = ""
         var imageNames = ["water", "air", "fire", "dirt"]
 
-        
+    
         
         init(parent: ARViewContainer) {
             self.parent = parent
+            parent.arView.environment.lighting.intensityExponent = 1
         }
         
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
