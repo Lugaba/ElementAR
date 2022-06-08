@@ -4,8 +4,39 @@ import RealityKit
 
 //Displays as a SwiftUI View
 struct ContentView : View {
+    @State var openConquistas = false
+    
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack {
+            ARViewContainer().edgesIgnoringSafeArea(.all)
+            HStack{
+                Spacer()
+                VStack {
+                    
+                    Button {
+                        openConquistas.toggle()
+                    } label: {
+                        ButtonConquistasView()
+                    }
+                    Spacer()
+                }.padding()
+            }
+            InfoGridView(openConquistas: $openConquistas)
+        }
+    }
+}
+
+struct InfoGridView: View {
+    @Binding var openConquistas: Bool
+    
+    var body: some View {
+        if openConquistas {
+            CollectionGridView()
+                .frame(width: 320, height: 500, alignment: .center)
+                .cornerRadius(20)
+        } else {
+            EmptyView()
+        }
     }
 }
 
@@ -25,7 +56,6 @@ struct ARViewContainer: UIViewRepresentable {
         var anchorMixName: String = ""
         var imageNames = ["water", "air", "fire", "dirt"]
 
-    
         
         init(parent: ARViewContainer) {
             self.parent = parent
@@ -78,10 +108,6 @@ struct ARViewContainer: UIViewRepresentable {
                     
                     let positionMixX: Float = positionSecond.x - positionFirst.x
                     let positionMixZ: Float = positionSecond.z - positionFirst.z
-                
-                    if (anchors[0].name == "water" && anchors[1].name == "dirt") || ((anchors[0].name == "dirt" && anchors[1].name == "water")) {
-                        mixResult = "mud"
-                    }
                     
                     
                     mixResult = (anchors[0].name ?? "water") + (anchors[1].name ?? "dirt")
