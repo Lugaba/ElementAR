@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "tia.png",
+      "filename" : "IMG_4655.png",
       "idiom" : "universal"
     }
   ],
@@ -11,6 +11,6 @@
   },
   "properties" : {
     "unit" : "centimeters",
-    "width" : 7
+    "width" : 8.5
   }
 }
