@@ -29,14 +29,15 @@ struct CollectionGridView: View {
             VStack {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(Array(elements[0...5])) { element in
-                        CollectionCellView(color: element.color, name: element.name, icon: element.icon, isLocked: false)
+                        CollectionCellView(color: element.color, name: element.name, icon: element.icon, isUnlocked: UserDefaults.standard.bool(forKey: element.name))
                     }
                 }
+                
             }
             VStack {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(Array(elements[6...9])) { element in
-                        CollectionCellView(color: element.color, name: element.name, icon: element.icon, isLocked: false)
+                        CollectionCellView(color: element.color, name: element.name, icon: element.icon, isUnlocked: UserDefaults.standard.bool(forKey: element.name))
                     }
                     
                     Rectangle().fill(.clear)

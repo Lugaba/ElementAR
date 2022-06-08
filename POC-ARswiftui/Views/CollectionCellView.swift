@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct CollectionCellView: View {
-    @State private var isLocked: Bool
+    @State private var isUnlocked: Bool
     private var color: Color
     private var name: String
     private var icon: Image
     
-    init(color: Color, name: String, icon: Image, isLocked: Bool) {
+    init(color: Color, name: String, icon: Image, isUnlocked: Bool) {
         self.color = color
         self.name = name
         self.icon = icon
-        self.isLocked = isLocked
+        self.isUnlocked = isUnlocked
     }
     
     var body: some View {
         ZStack {
             color
-            if isLocked {
+            if !isUnlocked {
                 Color.greyElementar
                 Image("lockIcon")
                     .resizable()
@@ -52,7 +52,7 @@ struct CollectionCellView: View {
 
 struct CollectionCellView_Previews: PreviewProvider {
     static var previews: some View {
-        CollectionCellView(color: Color.yellowElementar, name: "Fogo", icon: Image("fireIcon"), isLocked: false)
+        CollectionCellView(color: Color.yellowElementar, name: "Fogo", icon: Image("fireIcon"), isUnlocked: false)
             .padding()
             .previewLayout(.sizeThatFits)
             

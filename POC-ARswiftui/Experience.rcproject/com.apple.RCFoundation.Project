@@ -224,7 +224,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "dirtair"
+                            "value" : "airdirt"
                           }
                         ]
                       ]
@@ -337,7 +337,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "waterdirt"
+                            "value" : "dirtwater"
                           }
                         ]
                       ]
@@ -791,7 +791,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "waterair"
+                            "value" : "airwater"
                           }
                         ]
                       ]
@@ -1017,7 +1017,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "fireair"
+                            "value" : "airfire"
                           }
                         ]
                       ]
@@ -1131,7 +1131,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "waterfire"
+                            "value" : "firewater"
                           }
                         ]
                       ]
