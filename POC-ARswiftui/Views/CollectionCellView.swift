@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct Content: Identifiable {
-    var color: Color
-    var name: String
-    var icon: Image
-    var id: String { name }
-}
-
 struct CollectionCellView: View {
     @State private var isLocked: Bool
     private var color: Color
