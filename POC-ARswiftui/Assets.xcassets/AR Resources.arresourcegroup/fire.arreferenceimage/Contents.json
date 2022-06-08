@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "bilhete.png",
+      "filename" : "IMG_4654.png",
       "idiom" : "universal"
     }
   ],
@@ -11,6 +11,6 @@
   },
   "properties" : {
     "unit" : "centimeters",
-    "width" : 7
+    "width" : 8.5
   }
 }
