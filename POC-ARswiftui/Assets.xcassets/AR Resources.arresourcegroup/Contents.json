@@ -5,10 +5,16 @@
   },
   "resources" : [
     {
-      "filename" : "oficina1.arreferenceimage"
+      "filename" : "air.arreferenceimage"
     },
     {
-      "filename" : "tia.arreferenceimage"
+      "filename" : "dirt.arreferenceimage"
+    },
+    {
+      "filename" : "fire.arreferenceimage"
+    },
+    {
+      "filename" : "water.arreferenceimage"
     }
   ]
 }
