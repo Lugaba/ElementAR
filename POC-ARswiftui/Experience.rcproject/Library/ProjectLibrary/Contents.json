@@ -108,5 +108,25 @@
     "libraryIdentifier" : "f71022e7515e3ac4cd57bde69343c57c",
     "format" : "model",
     "displayName" : "dust.usdz"
+  },
+  {
+    "libraryIdentifier" : "57989614165744140cd7b039be90c680",
+    "format" : "model",
+    "displayName" : "lavaProcedural.usdz"
+  },
+  {
+    "libraryIdentifier" : "7972e2f2645dc74ff8f92627275d77d3",
+    "format" : "model",
+    "displayName" : "aguaProcedural.usdz"
+  },
+  {
+    "libraryIdentifier" : "d225293eb28afbe0736841ee68106353",
+    "format" : "model",
+    "displayName" : "lamaProcedural.usdz"
+  },
+  {
+    "libraryIdentifier" : "746f2e1b1f19896a4d27c19ef373bdd8",
+    "format" : "model",
+    "displayName" : "poProcedural.usdz"
   }
 ]
