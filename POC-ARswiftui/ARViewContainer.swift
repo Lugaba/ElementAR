@@ -29,7 +29,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         init(parent: ARViewContainer) {
             self.parent = parent
-            parent.arView.environment.lighting.intensityExponent = 1
+            parent.arView.environment.lighting.intensityExponent = 2
             self.scene = try? Experience.loadElements()
             if self.scene == nil {
                 fatalError("Can't load the 3D models")
@@ -40,7 +40,6 @@ struct ARViewContainer: UIViewRepresentable {
             for anchor in anchors {
                 guard let imageAnchor = anchor as? ARImageAnchor else { return }
                 
-                // veririficar se tem nome a ancora e se é o nome que queremos
                 if let imageName = imageAnchor.name {
                     var cartaObjeto = ""
                     let entity = AnchorEntity(anchor: imageAnchor)
@@ -65,8 +64,6 @@ struct ARViewContainer: UIViewRepresentable {
                             parent.arView.scene.addAnchor(entity)
                         }
                     }
-                    
-                    
                 }
             }
         }
@@ -97,20 +94,23 @@ struct ARViewContainer: UIViewRepresentable {
                             obj.position.y = 0.1
                             obj.position.x = positionMixX/2 // positivo para direita
                             obj.position.z = positionMixZ/2 // positivo pra baixo
-                            objetos.append(obj)
+                            if !objetos.contains(obj) {
+                                objetos.append(obj)
+                            }
                             if let nome = anchors[0].name, let entidadeEle = entidadesDict[nome] {
                                 entidadeEle.addChild(obj)
                                 anchorMixName = nome
                             }
+                        }
                     }
-                    }
-                        
+                    
                 }
             } else {
                 mixing = false
                 
                 if let entidadeEle = entidadesDict[anchorMixName], let removeMix = entidadeEle.findEntity(named: mixResult) {
-                    entidadeEle.removeChild(removeMix)
+                    // Descobri que addChild remove do parent atual e coloca no novo parent
+                    self.scene?.addChild(removeMix)
                 }
             }
             

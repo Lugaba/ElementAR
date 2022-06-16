@@ -7,22 +7,28 @@ struct ContentView : View {
     @State var openConquistas = false
     
     var body: some View {
-        ZStack {
-            ARViewContainer().edgesIgnoringSafeArea(.all)
-            HStack{
-                Spacer()
-                VStack {
-                    
-                    Button {
-                        openConquistas.toggle()
-                    } label: {
-                        ButtonConquistasView()
-                    }
-                    Spacer()
-                }.padding()
+        NavigationView {
+            ZStack {
+                ARViewContainer().edgesIgnoringSafeArea(.all)
+                    HStack {
+                        Spacer()
+                        VStack {
+                            NavigationLink(destination: PDFUIView(name: "Lipsum")) {
+                                ButtonPdf()
+                            }
+                            Button {
+                                openConquistas.toggle()
+                            } label: {
+                                ButtonConquistasView()
+                            }
+                            Spacer()
+                        }
+                        
+                    }.padding()
+                InfoGridView(openConquistas: $openConquistas)
             }
-            InfoGridView(openConquistas: $openConquistas)
         }
+        
     }
 }
 
