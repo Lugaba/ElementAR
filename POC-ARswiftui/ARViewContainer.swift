@@ -24,11 +24,16 @@ struct ARViewContainer: UIViewRepresentable {
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
         var imageNames = ["water", "air", "fire", "dirt"]
-
+        var scene: Experience.Elements?
+        
         
         init(parent: ARViewContainer) {
             self.parent = parent
             parent.arView.environment.lighting.intensityExponent = 1
+            self.scene = try? Experience.loadElements()
+            if self.scene == nil {
+                fatalError("Can't load the 3D models")
+            }
         }
         
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
@@ -39,7 +44,7 @@ struct ARViewContainer: UIViewRepresentable {
                 if let imageName = imageAnchor.name {
                     var cartaObjeto = ""
                     let entity = AnchorEntity(anchor: imageAnchor)
-                                 
+                    
                     for name in imageNames {
                         if imageName == name {
                             cartaObjeto = name
@@ -49,9 +54,7 @@ struct ARViewContainer: UIViewRepresentable {
                     }
                     
                     entidadesDict[cartaObjeto] = entity
-                    
-                    if let scene = try? Experience.loadElements() {
-                        
+                    if let  scene = scene {
                         if let obj = scene.findEntity(named: cartaObjeto) {
                             obj.position.x = 0
                             obj.position.y = 0.05
@@ -61,8 +64,9 @@ struct ARViewContainer: UIViewRepresentable {
                             entity.addChild(obj)
                             parent.arView.scene.addAnchor(entity)
                         }
-                        
                     }
+                    
+                    
                 }
             }
         }
@@ -87,8 +91,8 @@ struct ARViewContainer: UIViewRepresentable {
                     }
                     
                     UserDefaults.standard.set(true, forKey: getNameElement(mixResult: mixResult))
-                                
-                    if let scene = try? Experience.loadElements() {
+                    
+                    if let scene = scene {
                         if let obj = scene.findEntity(named: mixResult) {
                             obj.position.y = 0.1
                             obj.position.x = positionMixX/2 // positivo para direita
@@ -98,8 +102,9 @@ struct ARViewContainer: UIViewRepresentable {
                                 entidadeEle.addChild(obj)
                                 anchorMixName = nome
                             }
-                        }
                     }
+                    }
+                        
                 }
             } else {
                 mixing = false
@@ -116,28 +121,28 @@ struct ARViewContainer: UIViewRepresentable {
         
         func getNameElement(mixResult: String) -> String {
             switch mixResult {
-                case "airdirt":
-                    return "Pó"
-                case "airwater":
-                    return "Chuva"
-                case "airfire":
-                    return "Energia"
-                case "dirtfire":
-                    return "Lava"
-                case "dirtwater":
-                    return "Lama"
-                case "firewater":
-                    return "Vapor"
-                case "water":
-                    return "Água"
-                case "air":
-                    return "Ar"
-                case "fire":
-                    return "Fogo"
-                case "dirt":
-                    return "Terra"
-                default:
-                    return "Água"
+            case "airdirt":
+                return "Pó"
+            case "airwater":
+                return "Chuva"
+            case "airfire":
+                return "Energia"
+            case "dirtfire":
+                return "Lava"
+            case "dirtwater":
+                return "Lama"
+            case "firewater":
+                return "Vapor"
+            case "water":
+                return "Água"
+            case "air":
+                return "Ar"
+            case "fire":
+                return "Fogo"
+            case "dirt":
+                return "Terra"
+            default:
+                return "Água"
             }
         }
     }
