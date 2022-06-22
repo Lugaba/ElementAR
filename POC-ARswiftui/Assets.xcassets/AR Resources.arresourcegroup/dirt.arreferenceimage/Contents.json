@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "IMG_4655.png",
+      "filename" : "Carta Terra.png",
       "idiom" : "universal"
     }
   ],
@@ -11,6 +11,6 @@
   },
   "properties" : {
     "unit" : "centimeters",
-    "width" : 8.5
+    "width" : 5
   }
 }

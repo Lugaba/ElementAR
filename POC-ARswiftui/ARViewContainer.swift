@@ -97,6 +97,9 @@ struct ARViewContainer: UIViewRepresentable {
                             if !objetos.contains(obj) {
                                 objetos.append(obj)
                             }
+                            if !imageNames.contains(getNameElement(mixResult: mixResult)) {
+                                imageNames.append(getNameElement(mixResult: mixResult))
+                            }
                             if let nome = anchors[0].name, let entidadeEle = entidadesDict[nome] {
                                 entidadeEle.addChild(obj)
                                 anchorMixName = nome

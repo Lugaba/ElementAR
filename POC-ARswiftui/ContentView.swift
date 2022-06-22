@@ -13,7 +13,7 @@ struct ContentView : View {
                     HStack {
                         Spacer()
                         VStack {
-                            NavigationLink(destination: PDFUIView(name: "Lipsum")) {
+                            NavigationLink(destination: StoreView()) {
                                 ButtonPdf()
                             }
                             Button {
