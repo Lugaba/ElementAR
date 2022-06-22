@@ -17,6 +17,7 @@
 		DF31C74E28622F28008D5566 /* freeCards.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF31C74D28622F28008D5566 /* freeCards.pdf */; };
 		DF4636C6285BC21500B3CBE9 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4636C5285BC21500B3CBE9 /* PDFKitView.swift */; };
 		DF4636CA285BC9FE00B3CBE9 /* ButtonPdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4636C9285BC9FE00B3CBE9 /* ButtonPdf.swift */; };
+		DF765B1C28637F250049ACB0 /* PackageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF765B1B28637F250049ACB0 /* PackageContent.swift */; };
 		DF7A7E222860D98900F5D0A9 /* ItemStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A7E212860D98900F5D0A9 /* ItemStoreView.swift */; };
 		DF8D0D75284E8C9500355702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D74284E8C9500355702 /* AppDelegate.swift */; };
 		DF8D0D77284E8C9500355702 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D76284E8C9500355702 /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 		DF31C74D28622F28008D5566 /* freeCards.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = freeCards.pdf; sourceTree = "<group>"; };
 		DF4636C5285BC21500B3CBE9 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		DF4636C9285BC9FE00B3CBE9 /* ButtonPdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPdf.swift; sourceTree = "<group>"; };
+		DF765B1B28637F250049ACB0 /* PackageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageContent.swift; sourceTree = "<group>"; };
 		DF7A7E212860D98900F5D0A9 /* ItemStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStoreView.swift; sourceTree = "<group>"; };
 		DF8D0D71284E8C9500355702 /* POC-ARswiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-ARswiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8D0D74284E8C9500355702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				C8303259284FF29E00683C6F /* CellContent.swift */,
+				DF765B1B28637F250049ACB0 /* PackageContent.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				DF14D26B2851160800F0AC6E /* ARViewContainer.swift in Sources */,
 				C810FF27284FBF3B00B4BCAF /* ColorExtension.swift in Sources */,
 				C830326328510B3200683C6F /* ButtonConquistasView.swift in Sources */,
+				DF765B1C28637F250049ACB0 /* PackageContent.swift in Sources */,
 				DF7A7E222860D98900F5D0A9 /* ItemStoreView.swift in Sources */,
 				DF4636C6285BC21500B3CBE9 /* PDFKitView.swift in Sources */,
 				C830325A284FF29E00683C6F /* CellContent.swift in Sources */,
