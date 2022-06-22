@@ -25,6 +25,7 @@ struct ARViewContainer: UIViewRepresentable {
         var anchorMixName: String = ""
         var imageNames = ["water", "air", "fire", "dirt"]
         var scene: Experience.Elements?
+        var isBought = true
         
         
         init(parent: ARViewContainer) {
@@ -44,23 +45,30 @@ struct ARViewContainer: UIViewRepresentable {
                     var cartaObjeto = ""
                     let entity = AnchorEntity(anchor: imageAnchor)
                     
-                    for name in imageNames {
-                        if imageName == name {
-                            cartaObjeto = name
-                            entity.name = name
-                            UserDefaults.standard.set(true, forKey: getNameElement(mixResult: name))
+                    if imageNames.contains(imageName) {
+                        cartaObjeto = imageName
+                        entity.name = imageName
+                        UserDefaults.standard.set(true, forKey: getNameElement(mixResult: imageName))
+                    } else {
+                        if isBought {
+                            cartaObjeto = "unknow"
+                            entity.name = imageName
+                        } else {
+                            cartaObjeto = "blocked"
+                            entity.name = imageName
                         }
                     }
                     
-                    entidadesDict[cartaObjeto] = entity
+                    entidadesDict[imageName] = entity
                     if let  scene = scene {
                         if let obj = scene.findEntity(named: cartaObjeto) {
-                            obj.position.x = 0
-                            obj.position.y = 0.05
-                            obj.position.z = 0
+                            let objClone = obj.clone(recursive: true)
+                            objClone.position.x = 0
+                            objClone.position.y = 0.025
+                            objClone.position.z = 0
                             
-                            objetos.append(obj)
-                            entity.addChild(obj)
+                            objetos.append(objClone)
+                            entity.addChild(objClone)
                             parent.arView.scene.addAnchor(entity)
                         }
                     }
@@ -87,19 +95,30 @@ struct ARViewContainer: UIViewRepresentable {
                         }
                     }
                     
-                    UserDefaults.standard.set(true, forKey: getNameElement(mixResult: mixResult))
-                    
                     if let scene = scene {
                         if let obj = scene.findEntity(named: mixResult) {
-                            obj.position.y = 0.1
+                            obj.position.y = 0.075
                             obj.position.x = positionMixX/2 // positivo para direita
                             obj.position.z = positionMixZ/2 // positivo pra baixo
+                            UserDefaults.standard.set(true, forKey: getNameElement(mixResult: mixResult))
                             if !objetos.contains(obj) {
                                 objetos.append(obj)
                             }
-                            if !imageNames.contains(getNameElement(mixResult: mixResult)) {
-                                imageNames.append(getNameElement(mixResult: mixResult))
+                            if !imageNames.contains(mixResult) {
+                                imageNames.append(mixResult)
                             }
+
+                            if let anchorMix = entidadesDict[mixResult], let removeMix = anchorMix.findEntity(named: "unknow"), isBought {
+                                anchorMix.removeChild(removeMix)
+                                let objClone = obj.clone(recursive: true)
+                                objClone.position.x = 0
+                                objClone.position.y = 0.025
+                                objClone.position.z = 0
+                                
+                                objetos.append(objClone)
+                                anchorMix.addChild(objClone)
+                            }
+                            
                             if let nome = anchors[0].name, let entidadeEle = entidadesDict[nome] {
                                 entidadeEle.addChild(obj)
                                 anchorMixName = nome
@@ -121,7 +140,7 @@ struct ARViewContainer: UIViewRepresentable {
                 objeto.transform.rotation *= simd_quatf(angle: 0.005, axis: SIMD3<Float>(0,1,0))
             }
         }
-        
+                
         func getNameElement(mixResult: String) -> String {
             switch mixResult {
             case "airdirt":
@@ -176,7 +195,4 @@ struct ARViewContainer: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {}
-    
-    
-    
 }

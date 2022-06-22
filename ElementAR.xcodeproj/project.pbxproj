@@ -11,12 +11,10 @@
 		C810FF27284FBF3B00B4BCAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C810FF26284FBF3B00B4BCAF /* ColorExtension.swift */; };
 		C830325A284FF29E00683C6F /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8303259284FF29E00683C6F /* CellContent.swift */; };
 		C830326128510AB300683C6F /* CollectionGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830326028510AB300683C6F /* CollectionGridView.swift */; };
-		C830326328510B3200683C6F /* ButtonConquistasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830326228510B3200683C6F /* ButtonConquistasView.swift */; };
+		C830326328510B3200683C6F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830326228510B3200683C6F /* ButtonView.swift */; };
 		DF1115C32860E9AC00F352D1 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1115C22860E9AC00F352D1 /* StoreView.swift */; };
 		DF14D26B2851160800F0AC6E /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF14D26A2851160800F0AC6E /* ARViewContainer.swift */; };
-		DF31C74E28622F28008D5566 /* freeCards.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF31C74D28622F28008D5566 /* freeCards.pdf */; };
 		DF4636C6285BC21500B3CBE9 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4636C5285BC21500B3CBE9 /* PDFKitView.swift */; };
-		DF4636CA285BC9FE00B3CBE9 /* ButtonPdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4636C9285BC9FE00B3CBE9 /* ButtonPdf.swift */; };
 		DF765B1C28637F250049ACB0 /* PackageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF765B1B28637F250049ACB0 /* PackageContent.swift */; };
 		DF7A7E222860D98900F5D0A9 /* ItemStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A7E212860D98900F5D0A9 /* ItemStoreView.swift */; };
 		DF8D0D75284E8C9500355702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D74284E8C9500355702 /* AppDelegate.swift */; };
@@ -24,6 +22,7 @@
 		DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D78284E8C9500355702 /* Experience.rcproject */; };
 		DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7A284E8C9700355702 /* Assets.xcassets */; };
 		DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */; };
+		DFABBBED28639147000C6616 /* freeCards.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFABBBEC28639147000C6616 /* freeCards.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +30,10 @@
 		C810FF26284FBF3B00B4BCAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		C8303259284FF29E00683C6F /* CellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
 		C830326028510AB300683C6F /* CollectionGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGridView.swift; sourceTree = "<group>"; };
-		C830326228510B3200683C6F /* ButtonConquistasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConquistasView.swift; sourceTree = "<group>"; };
+		C830326228510B3200683C6F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		DF1115C22860E9AC00F352D1 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		DF14D26A2851160800F0AC6E /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
-		DF31C74D28622F28008D5566 /* freeCards.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = freeCards.pdf; sourceTree = "<group>"; };
 		DF4636C5285BC21500B3CBE9 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
-		DF4636C9285BC9FE00B3CBE9 /* ButtonPdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPdf.swift; sourceTree = "<group>"; };
 		DF765B1B28637F250049ACB0 /* PackageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageContent.swift; sourceTree = "<group>"; };
 		DF7A7E212860D98900F5D0A9 /* ItemStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStoreView.swift; sourceTree = "<group>"; };
 		DF8D0D71284E8C9500355702 /* POC-ARswiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-ARswiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +43,7 @@
 		DF8D0D7A284E8C9700355702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF8D0D84284E8F5300355702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFABBBEC28639147000C6616 /* freeCards.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = freeCards.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +63,7 @@
 				DF4636C5285BC21500B3CBE9 /* PDFKitView.swift */,
 				C810FF22284FBBBB00B4BCAF /* CollectionCellView.swift */,
 				C830326028510AB300683C6F /* CollectionGridView.swift */,
-				C830326228510B3200683C6F /* ButtonConquistasView.swift */,
-				DF4636C9285BC9FE00B3CBE9 /* ButtonPdf.swift */,
+				C830326228510B3200683C6F /* ButtonView.swift */,
 				DF7A7E212860D98900F5D0A9 /* ItemStoreView.swift */,
 				DF1115C22860E9AC00F352D1 /* StoreView.swift */,
 			);
@@ -118,7 +115,7 @@
 				DF14D26A2851160800F0AC6E /* ARViewContainer.swift */,
 				DF8D0D78284E8C9500355702 /* Experience.rcproject */,
 				DF8D0D7A284E8C9700355702 /* Assets.xcassets */,
-				DF31C74D28622F28008D5566 /* freeCards.pdf */,
+				DFABBBEC28639147000C6616 /* freeCards.pdf */,
 				DF8D0D7C284E8C9700355702 /* Preview Content */,
 			);
 			path = "POC-ARswiftui";
@@ -192,7 +189,7 @@
 			files = (
 				DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */,
 				DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */,
-				DF31C74E28622F28008D5566 /* freeCards.pdf in Resources */,
+				DFABBBED28639147000C6616 /* freeCards.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,12 +204,11 @@
 				DF8D0D77284E8C9500355702 /* ContentView.swift in Sources */,
 				DF8D0D75284E8C9500355702 /* AppDelegate.swift in Sources */,
 				C810FF23284FBBBB00B4BCAF /* CollectionCellView.swift in Sources */,
-				DF4636CA285BC9FE00B3CBE9 /* ButtonPdf.swift in Sources */,
 				DF1115C32860E9AC00F352D1 /* StoreView.swift in Sources */,
 				DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */,
 				DF14D26B2851160800F0AC6E /* ARViewContainer.swift in Sources */,
 				C810FF27284FBF3B00B4BCAF /* ColorExtension.swift in Sources */,
-				C830326328510B3200683C6F /* ButtonConquistasView.swift in Sources */,
+				C830326328510B3200683C6F /* ButtonView.swift in Sources */,
 				DF765B1C28637F250049ACB0 /* PackageContent.swift in Sources */,
 				DF7A7E222860D98900F5D0A9 /* ItemStoreView.swift in Sources */,
 				DF4636C6285BC21500B3CBE9 /* PDFKitView.swift in Sources */,

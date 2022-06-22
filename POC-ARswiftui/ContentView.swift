@@ -10,21 +10,21 @@ struct ContentView : View {
         NavigationView {
             ZStack {
                 ARViewContainer().edgesIgnoringSafeArea(.all)
-                    HStack {
-                        Spacer()
-                        VStack {
-                            NavigationLink(destination: StoreView()) {
-                                ButtonPdf()
-                            }
-                            Button {
-                                openConquistas.toggle()
-                            } label: {
-                                ButtonConquistasView()
-                            }
-                            Spacer()
+                HStack {
+                    Spacer()
+                    VStack {
+                        NavigationLink(destination: StoreView()) {
+                            ButtonView(systemIcon: "cart.fill")
                         }
-                        
-                    }.padding()
+                        Button {
+                            openConquistas.toggle()
+                        } label: {
+                            ButtonView(systemIcon: "menucard.fill")
+                        }
+                        Spacer()
+                    }
+                }.padding()
+                
                 InfoGridView(openConquistas: $openConquistas)
             }
         }
@@ -38,7 +38,7 @@ struct InfoGridView: View {
     var body: some View {
         if openConquistas {
             CollectionGridView()
-                .frame(width: 320, height: 500, alignment: .center)
+                .frame(width: 320, height: 540, alignment: .center)
                 .cornerRadius(20)
         } else {
             EmptyView()
