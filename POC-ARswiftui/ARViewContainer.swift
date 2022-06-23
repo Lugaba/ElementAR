@@ -23,7 +23,8 @@ struct ARViewContainer: UIViewRepresentable {
         var mixing = false
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
-        var imageNames = ["water", "air", "fire", "dirt"]
+        var imageNames: [String] = ["Água", "Ar", "Fogo", "Terra"]
+        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArÁgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "ÁguaTerra": "Lama", "ÁguaFogo": "Vapor", "LavaÁgua": "Pedra"]
         var scene: Experience.Elements?
         var isBought = true
         
@@ -35,6 +36,9 @@ struct ARViewContainer: UIViewRepresentable {
             if self.scene == nil {
                 fatalError("Can't load the 3D models")
             }
+            if let imageNames = UserDefaults.standard.object(forKey: "imageNames") as? [String] {
+                self.imageNames = imageNames
+            }
         }
         
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
@@ -45,17 +49,15 @@ struct ARViewContainer: UIViewRepresentable {
                     var cartaObjeto = ""
                     let entity = AnchorEntity(anchor: imageAnchor)
                     
+                    entity.name = imageName
                     if imageNames.contains(imageName) {
+                        UserDefaults.standard.set(true, forKey: imageName)
                         cartaObjeto = imageName
-                        entity.name = imageName
-                        UserDefaults.standard.set(true, forKey: getNameElement(mixResult: imageName))
                     } else {
                         if isBought {
                             cartaObjeto = "unknow"
-                            entity.name = imageName
                         } else {
                             cartaObjeto = "blocked"
-                            entity.name = imageName
                         }
                     }
                     
@@ -95,17 +97,24 @@ struct ARViewContainer: UIViewRepresentable {
                         }
                     }
                     
+                    if let nameDict = dictMixs[mixResult] {
+                        UserDefaults.standard.set(true, forKey: nameDict)
+                        mixResult = nameDict
+                    }
+                    
+                    print(mixResult)
                     if let scene = scene {
                         if let obj = scene.findEntity(named: mixResult) {
                             obj.position.y = 0.075
                             obj.position.x = positionMixX/2 // positivo para direita
                             obj.position.z = positionMixZ/2 // positivo pra baixo
-                            UserDefaults.standard.set(true, forKey: getNameElement(mixResult: mixResult))
+                            UserDefaults.standard.set(true, forKey: mixResult)
                             if !objetos.contains(obj) {
                                 objetos.append(obj)
                             }
                             if !imageNames.contains(mixResult) {
                                 imageNames.append(mixResult)
+                                UserDefaults.standard.set(imageNames, forKey: "imageNames")
                             }
 
                             if let anchorMix = entidadesDict[mixResult], let removeMix = anchorMix.findEntity(named: "unknow"), isBought {
@@ -125,7 +134,6 @@ struct ARViewContainer: UIViewRepresentable {
                             }
                         }
                     }
-                    
                 }
             } else {
                 mixing = false
@@ -141,32 +149,6 @@ struct ARViewContainer: UIViewRepresentable {
             }
         }
                 
-        func getNameElement(mixResult: String) -> String {
-            switch mixResult {
-            case "airdirt":
-                return "Pó"
-            case "airwater":
-                return "Chuva"
-            case "airfire":
-                return "Energia"
-            case "dirtfire":
-                return "Lava"
-            case "dirtwater":
-                return "Lama"
-            case "firewater":
-                return "Vapor"
-            case "water":
-                return "Água"
-            case "air":
-                return "Ar"
-            case "fire":
-                return "Fogo"
-            case "dirt":
-                return "Terra"
-            default:
-                return "Água"
-            }
-        }
     }
     
     func makeUIView(context: Context) -> ARView {

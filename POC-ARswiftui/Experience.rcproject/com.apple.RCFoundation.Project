@@ -109,7 +109,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "water"
+                            "value" : "Água"
                           }
                         ]
                       ]
@@ -222,7 +222,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "air"
+                            "value" : "Ar"
                           }
                         ]
                       ]
@@ -253,6 +253,119 @@
                   "8AB4F1B5-4B5D-4D83-9183-5EFBFB36F7D3" : null,
                   "9DE92C79-DB1D-48A9-89F2-74EBA7CB8C18" : null,
                   "9FE238BB-9E71-4700-B8C4-A58DF50E40DA" : null,
+                  "19E388C4-FC05-4B08-86FA-D29F5DD71E44" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:bafd8e90ef32561aa016b1f900647689\/pedra.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "BEA09178-AEBC-4D16-BD4F-9EC7FA3E6F03"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "4EBCEA35-C937-4122-9599-124B6B76C95C"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "Pedra"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.020000001415610313,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.020000001415610313,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.020000001415610313,
+                        0,
+                        -0.25,
+                        0.05000000074505806,
+                        0,
+                        1
+                      ]
+                    }
+                  },
                   "45B5EFB7-29FF-41D5-AFD0-EF0C86A2A23E" : {
                     "overrides" : {
                       "children" : {
@@ -340,7 +453,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "fire"
+                            "value" : "Fogo"
                           }
                         ]
                       ]
@@ -454,7 +567,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "dirtfire"
+                            "value" : "Lava"
                           }
                         ]
                       ]
@@ -568,7 +681,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "dirtwater"
+                            "value" : "Lama"
                           }
                         ]
                       ]
@@ -898,7 +1011,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "airwater"
+                            "value" : "Chuva"
                           }
                         ]
                       ]
@@ -1011,7 +1124,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "dirt"
+                            "value" : "Terra"
                           }
                         ]
                       ]
@@ -1124,7 +1237,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "airfire"
+                            "value" : "Energia"
                           }
                         ]
                       ]
@@ -1455,7 +1568,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "airdirt"
+                            "value" : "Poeira"
                           }
                         ]
                       ]
@@ -1568,7 +1681,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "firewater"
+                            "value" : "Vapor"
                           }
                         ]
                       ]
@@ -1611,21 +1724,21 @@
               "title" : "Elements",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.82249152660369873,
-                  -2.2351740014414645e-08,
-                  -0.56877726316452026,
+                  0.97787332534790039,
+                  -2.4214385163645602e-08,
+                  -0.20919771492481232,
                   0,
-                  -0.1677062064409256,
-                  0.95554226636886597,
-                  -0.24251493811607361,
+                  -0.076068036258220673,
+                  0.93154799938201904,
+                  -0.35557258129119873,
                   0,
-                  0.54349076747894287,
-                  0.29485398530960083,
-                  0.78592550754547119,
+                  0.19487772881984711,
+                  0.36361819505691528,
+                  0.91093599796295166,
                   0,
-                  0.4095672070980072,
-                  0.093406714498996735,
-                  0.10902739316225052,
+                  0.2933381199836731,
+                  0.24861520528793335,
+                  0.59052103757858276,
                   1
                 ],
                 "sceneTransform" : [

@@ -34,7 +34,6 @@ struct CollectionCellView: View {
                     icon
                         .resizable()
                         .scaledToFit()
-                        .padding(.bottom, 10)
                     Spacer()
                     Text(name)
                         .padding(.horizontal)
@@ -45,7 +44,7 @@ struct CollectionCellView: View {
             }
             
         }
-        .frame(width: 120, height: 120)
+        .frame(width: 100, height: 100)
         .cornerRadius(14)
     }
 }

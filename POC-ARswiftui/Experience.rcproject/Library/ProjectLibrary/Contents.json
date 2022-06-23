@@ -133,5 +133,10 @@
     "libraryIdentifier" : "78dec1ab566c5b09a083401a393ef457",
     "format" : "image",
     "displayName" : "dirt.png"
+  },
+  {
+    "libraryIdentifier" : "bafd8e90ef32561aa016b1f900647689",
+    "format" : "model",
+    "displayName" : "pedra.usdz"
   }
 ]

@@ -18,11 +18,13 @@ struct CollectionGridView: View {
                                    CellContent(color: Color.greenElementar, name: "Lama", icon: Image("mudIcon")),
                                    CellContent(color: Color.yellowElementar, name: "Energia", icon: Image("energyIcon")),
                                    CellContent(color: Color.blueElementar, name: "Chuva", icon: Image("rainIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Vapor", icon: Image("vaporIcon"))
+                                   CellContent(color: Color.blueElementar, name: "Vapor", icon: Image("vaporIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Pedra", icon: Image("lavaIcon"))
     ]
     let columns = [
         GridItem(.adaptive(minimum: 200)),
         GridItem(.adaptive(minimum: 200)),
+        GridItem(.adaptive(minimum: 200))
     ]
     var body: some View {
         VStack(spacing: 0) {
@@ -31,8 +33,8 @@ struct CollectionGridView: View {
                 .font(.system(.largeTitle, design: .rounded))
             TabView {
                 VStack {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(Array(elements[0...5])) { element in
+                    LazyVGrid(columns: columns, spacing: 0) {
+                        ForEach(Array(elements[0...8])) { element in
                             CollectionCellView(color: element.color, name: element.name, icon: element.icon, isUnlocked: UserDefaults.standard.bool(forKey: element.name))
                         }
                     }
