@@ -7,22 +7,28 @@ struct ContentView : View {
     @State var openConquistas = false
     
     var body: some View {
-        ZStack {
-            ARViewContainer().edgesIgnoringSafeArea(.all)
-            HStack{
-                Spacer()
-                VStack {
-                    
-                    Button {
-                        openConquistas.toggle()
-                    } label: {
-                        ButtonConquistasView()
-                    }
+        NavigationView {
+            ZStack {
+                ARViewContainer().edgesIgnoringSafeArea(.all)
+                HStack {
                     Spacer()
+                    VStack {
+                        NavigationLink(destination: StoreView()) {
+                            ButtonView(systemIcon: "cart.fill")
+                        }
+                        Button {
+                            openConquistas.toggle()
+                        } label: {
+                            ButtonView(systemIcon: "menucard.fill")
+                        }
+                        Spacer()
+                    }
                 }.padding()
+                
+                InfoGridView(openConquistas: $openConquistas)
             }
-            InfoGridView(openConquistas: $openConquistas)
         }
+        
     }
 }
 
@@ -32,7 +38,7 @@ struct InfoGridView: View {
     var body: some View {
         if openConquistas {
             CollectionGridView()
-                .frame(width: 320, height: 500, alignment: .center)
+                .frame(width: 320, height: 540, alignment: .center)
                 .cornerRadius(20)
         } else {
             EmptyView()

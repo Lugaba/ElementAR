@@ -5,16 +5,19 @@
   },
   "resources" : [
     {
-      "filename" : "air.arreferenceimage"
+      "filename" : "Água.arreferenceimage"
     },
     {
-      "filename" : "dirt.arreferenceimage"
+      "filename" : "Ar.arreferenceimage"
     },
     {
-      "filename" : "fire.arreferenceimage"
+      "filename" : "Fogo.arreferenceimage"
     },
     {
-      "filename" : "water.arreferenceimage"
+      "filename" : "Lava.arreferenceimage"
+    },
+    {
+      "filename" : "Terra.arreferenceimage"
     }
   ]
 }

@@ -23,45 +23,56 @@ struct ARViewContainer: UIViewRepresentable {
         var mixing = false
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
-        var imageNames = ["water", "air", "fire", "dirt"]
-
+        var imageNames: [String] = ["Água", "Ar", "Fogo", "Terra"]
+        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArÁgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "ÁguaTerra": "Lama", "ÁguaFogo": "Vapor", "LavaÁgua": "Pedra"]
+        var scene: Experience.Elements?
+        var isBought = true
+        
         
         init(parent: ARViewContainer) {
             self.parent = parent
-            parent.arView.environment.lighting.intensityExponent = 1
+            parent.arView.environment.lighting.intensityExponent = 2
+            self.scene = try? Experience.loadElements()
+            if self.scene == nil {
+                fatalError("Can't load the 3D models")
+            }
+            if let imageNames = UserDefaults.standard.object(forKey: "imageNames") as? [String] {
+                self.imageNames = imageNames
+            }
         }
         
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
             for anchor in anchors {
                 guard let imageAnchor = anchor as? ARImageAnchor else { return }
                 
-                // veririficar se tem nome a ancora e se é o nome que queremos
                 if let imageName = imageAnchor.name {
                     var cartaObjeto = ""
                     let entity = AnchorEntity(anchor: imageAnchor)
-                                 
-                    for name in imageNames {
-                        if imageName == name {
-                            cartaObjeto = name
-                            entity.name = name
-                            UserDefaults.standard.set(true, forKey: getNameElement(mixResult: name))
+                    
+                    entity.name = imageName
+                    if imageNames.contains(imageName) {
+                        UserDefaults.standard.set(true, forKey: imageName)
+                        cartaObjeto = imageName
+                    } else {
+                        if isBought {
+                            cartaObjeto = "unknow"
+                        } else {
+                            cartaObjeto = "blocked"
                         }
                     }
                     
-                    entidadesDict[cartaObjeto] = entity
-                    
-                    if let scene = try? Experience.loadElements() {
-                        
+                    entidadesDict[imageName] = entity
+                    if let  scene = scene {
                         if let obj = scene.findEntity(named: cartaObjeto) {
-                            obj.position.x = 0
-                            obj.position.y = 0.05
-                            obj.position.z = 0
+                            let objClone = obj.clone(recursive: true)
+                            objClone.position.x = 0
+                            objClone.position.y = 0.025
+                            objClone.position.z = 0
                             
-                            objetos.append(obj)
-                            entity.addChild(obj)
+                            objetos.append(objClone)
+                            entity.addChild(objClone)
                             parent.arView.scene.addAnchor(entity)
                         }
-                        
                     }
                 }
             }
@@ -86,14 +97,37 @@ struct ARViewContainer: UIViewRepresentable {
                         }
                     }
                     
-                    UserDefaults.standard.set(true, forKey: getNameElement(mixResult: mixResult))
-                                
-                    if let scene = try? Experience.loadElements() {
+                    if let nameDict = dictMixs[mixResult] {
+                        UserDefaults.standard.set(true, forKey: nameDict)
+                        mixResult = nameDict
+                    }
+                    
+                    print(mixResult)
+                    if let scene = scene {
                         if let obj = scene.findEntity(named: mixResult) {
-                            obj.position.y = 0.1
+                            obj.position.y = 0.075
                             obj.position.x = positionMixX/2 // positivo para direita
                             obj.position.z = positionMixZ/2 // positivo pra baixo
-                            objetos.append(obj)
+                            UserDefaults.standard.set(true, forKey: mixResult)
+                            if !objetos.contains(obj) {
+                                objetos.append(obj)
+                            }
+                            if !imageNames.contains(mixResult) {
+                                imageNames.append(mixResult)
+                                UserDefaults.standard.set(imageNames, forKey: "imageNames")
+                            }
+
+                            if let anchorMix = entidadesDict[mixResult], let removeMix = anchorMix.findEntity(named: "unknow"), isBought {
+                                anchorMix.removeChild(removeMix)
+                                let objClone = obj.clone(recursive: true)
+                                objClone.position.x = 0
+                                objClone.position.y = 0.025
+                                objClone.position.z = 0
+                                
+                                objetos.append(objClone)
+                                anchorMix.addChild(objClone)
+                            }
+                            
                             if let nome = anchors[0].name, let entidadeEle = entidadesDict[nome] {
                                 entidadeEle.addChild(obj)
                                 anchorMixName = nome
@@ -105,7 +139,8 @@ struct ARViewContainer: UIViewRepresentable {
                 mixing = false
                 
                 if let entidadeEle = entidadesDict[anchorMixName], let removeMix = entidadeEle.findEntity(named: mixResult) {
-                    entidadeEle.removeChild(removeMix)
+                    // Descobri que addChild remove do parent atual e coloca no novo parent
+                    self.scene?.addChild(removeMix)
                 }
             }
             
@@ -113,33 +148,7 @@ struct ARViewContainer: UIViewRepresentable {
                 objeto.transform.rotation *= simd_quatf(angle: 0.005, axis: SIMD3<Float>(0,1,0))
             }
         }
-        
-        func getNameElement(mixResult: String) -> String {
-            switch mixResult {
-                case "airdirt":
-                    return "Pó"
-                case "airwater":
-                    return "Chuva"
-                case "airfire":
-                    return "Energia"
-                case "dirtfire":
-                    return "Lava"
-                case "dirtwater":
-                    return "Lama"
-                case "firewater":
-                    return "Vapor"
-                case "water":
-                    return "Água"
-                case "air":
-                    return "Ar"
-                case "fire":
-                    return "Fogo"
-                case "dirt":
-                    return "Terra"
-                default:
-                    return "Água"
-            }
-        }
+                
     }
     
     func makeUIView(context: Context) -> ARView {
@@ -168,7 +177,4 @@ struct ARViewContainer: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {}
-    
-    
-    
 }

@@ -7,11 +7,17 @@
 
 import SwiftUI
 
-struct ButtonConquistasView: View {
+struct ButtonView: View {
+    private var systemIcon: String
+    
+    init(systemIcon: String) {
+        self.systemIcon = systemIcon
+    }
+    
     var body: some View {
         ZStack {
             Color.blackElementar
-            Image(systemName: "menucard.fill")
+            Image(systemName: systemIcon)
                 .resizable()
                 .scaledToFit()
                 .padding(7)
@@ -23,9 +29,9 @@ struct ButtonConquistasView: View {
     }
 }
 
-struct ButtonConquistasView_Previews: PreviewProvider {
+struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonConquistasView()
+        ButtonView(systemIcon: "menucard.fill")
             .previewLayout(.sizeThatFits)
     }
 }
