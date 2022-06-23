@@ -37,8 +37,8 @@ struct InfoGridView: View {
     
     var body: some View {
         if openConquistas {
-            CollectionGridView()
-                .frame(width: 320, height: 540, alignment: .center)
+            CollectionGridView(openConquistas: $openConquistas)
+                .frame(width: 350, height: 540, alignment: .center)
                 .cornerRadius(20)
         } else {
             EmptyView()

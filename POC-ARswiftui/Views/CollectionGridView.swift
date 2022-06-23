@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CollectionGridView: View {
-    
+    @Binding var openConquistas: Bool
     let elements: [CellContent] = [CellContent(color: Color.redElementar, name: "Fogo", icon: Image("fireIcon")),
                                    CellContent(color: Color.blueElementar, name: "Água", icon: Image("waterIcon")),
                                    CellContent(color: Color.yellowElementar, name: "Ar", icon: Image("airIcon")),
@@ -26,42 +26,55 @@ struct CollectionGridView: View {
         GridItem(.adaptive(minimum: 200)),
         GridItem(.adaptive(minimum: 200))
     ]
+    var indexFind = 0
     var body: some View {
-        VStack(spacing: 0) {
-            Text("Conquistas")
-                .padding(.top)
-                .font(.system(.largeTitle, design: .rounded))
-            TabView {
-                VStack {
-                    LazyVGrid(columns: columns, spacing: 0) {
-                        ForEach(Array(elements[0...8])) { element in
-                            CollectionCellView(color: element.color, name: element.name, icon: element.icon, isUnlocked: UserDefaults.standard.bool(forKey: element.name))
+        ZStack {
+            VStack(spacing: 0) {
+                HStack {
+                    Spacer()
+                    Text("Conquistas")
+                        .padding(.top)
+                        .font(.system(.largeTitle, design: .rounded))
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                Text("/\(elements.count)")
+                    .font(.system(.title3, design: .rounded))
+                TabView {
+                    VStack {
+                        LazyVGrid(columns: columns, spacing: 8) {
+                            ForEach(Array(elements[0...8])) { element in
+                                CollectionCellView(color: element.color, name: element.name, icon: element.icon, isUnlocked: UserDefaults.standard.bool(forKey: element.name))
+                            }
+                        }.padding(20)
+                    }
+                    VStack {
+                        LazyVGrid(columns: columns, spacing: 8) {
+                            ForEach(Array(elements[9...elements.count-1])) { element in
+                                CollectionCellView(color: element.color, name: element.name, icon: element.icon, isUnlocked: UserDefaults.standard.bool(forKey: element.name))
+                            }
                         }
                     }
-                    
                 }
-                VStack {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(Array(elements[6...9])) { element in
-                            CollectionCellView(color: element.color, name: element.name, icon: element.icon, isUnlocked: UserDefaults.standard.bool(forKey: element.name))
-                        }
-                        
-                        Rectangle().fill(.clear)
-                            .frame(width: 120, height: 120)
-                        Rectangle().fill(.clear)
-                            .frame(width: 120, height: 120)
-                    }
-                }
+                .tabViewStyle(.page(indexDisplayMode: .always))
             }
-            .tabViewStyle(.page(indexDisplayMode: .always))
+            .background(Color.blackElementar)
+            
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {openConquistas.toggle()}) {
+                        Image(systemName: "x.circle.fill")
+                            .imageScale(.large)
+                            .foregroundColor(.white)
+                    }.padding(16)
+                }
+                Spacer()
+            }
+            
+            
         }
-        .background(Color.blackElementar)
+        
 
-    }
-}
-
-struct CollectionGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        CollectionGridView()
     }
 }

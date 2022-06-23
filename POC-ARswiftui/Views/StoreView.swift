@@ -18,6 +18,8 @@ struct StoreView: View {
                     .background(.yellow.opacity(0.8))
                     .cornerRadius(15)
                     .padding(.top, 20)
+                    .font(.system(.body, design: .rounded))
+
                     
                 ForEach(Array(pacotes)) { pacote in
                     ItemStoreView(name: pacote.name, imageName: pacote.imageName, price: pacote.price, description: pacote.description, pdfName: pacote.pdfName)

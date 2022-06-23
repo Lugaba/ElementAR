@@ -35,16 +35,18 @@ struct ItemStoreView: View {
                         .cornerRadius(10)
                     VStack(alignment: .leading, spacing: 16) {
                         Text(name).foregroundColor(.black)
-                            .font(.title2)
-                            .fontWeight(.semibold)
+                            .font(.system(.title2, design: .rounded) .weight(.semibold))
                         Text(description)
                             .foregroundColor(.black)
-                            .font(.caption)
+                            .font(.system(.caption, design: .rounded))
                             .fixedSize(horizontal: false, vertical: true)
                         HStack {
                             Spacer()
                             NavigationLink(destination: PDFUIView(name: pdfName)) {
-                                Text("R$ \(price, specifier: "%.2f")").padding(8).foregroundColor(.white)
+                                Text("R$ \(price, specifier: "%.2f")")
+                                    .padding(8)
+                                    .foregroundColor(.white)
+                                    .font(.system(.body, design: .rounded))
                             }
                             .background(Color.green)
                             .cornerRadius(10)
