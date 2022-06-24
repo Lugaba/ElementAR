@@ -24,7 +24,7 @@ struct ARViewContainer: UIViewRepresentable {
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
         var imageNames: [String] = ["Água", "Ar", "Fogo", "Terra"]
-        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArÁgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "ÁguaTerra": "Lama", "ÁguaFogo": "Vapor", "LavaÁgua": "Pedra"]
+        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArÁgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "TerraÁgua": "Lama", "FogoÁgua": "Vapor", "LavaÁgua": "Pedra"]
         var scene: Experience.Elements?
         var isBought = true
         

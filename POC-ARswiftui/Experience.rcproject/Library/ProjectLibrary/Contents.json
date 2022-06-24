@@ -138,5 +138,15 @@
     "libraryIdentifier" : "bafd8e90ef32561aa016b1f900647689",
     "format" : "model",
     "displayName" : "pedra.usdz"
+  },
+  {
+    "libraryIdentifier" : "d2058e7fb894ab2e6e0eea175293d498",
+    "format" : "model",
+    "displayName" : "Terra.usdz"
+  },
+  {
+    "libraryIdentifier" : "ed8a57a9289afe0d07af9c09333d4460",
+    "format" : "model",
+    "displayName" : "Energia.usdz"
   }
 ]

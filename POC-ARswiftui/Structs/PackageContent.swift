@@ -13,5 +13,7 @@ struct PackageContent: Identifiable {
     var price: Float
     var description: String
     var pdfName: String
+    var isBought: Bool
+    var isAvailable: Bool
     var id: String { name }
 }

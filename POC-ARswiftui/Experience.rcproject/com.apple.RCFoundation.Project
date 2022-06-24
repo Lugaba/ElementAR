@@ -135,6 +135,119 @@
                       ]
                     }
                   },
+                  "1E74EA9F-B67B-4BDB-9228-BFBF80A69754" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:d2058e7fb894ab2e6e0eea175293d498\/Terra.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "AD101683-D0F5-46B4-AD50-95F068DEF81E"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "7C7F7EAF-EE9C-428F-96C4-FF449D74830A"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "Terra"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.020000001415610313,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.020000001415610313,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.020000001415610313,
+                        0,
+                        -0.05000000074505806,
+                        0.049999933689832687,
+                        0,
+                        1
+                      ]
+                    }
+                  },
                   "2AD7A803-8560-4269-9E65-6B9C4B812799" : {
                     "overrides" : {
                       "children" : {
@@ -250,6 +363,119 @@
                   },
                   "04DCF7B0-AD76-4E1B-B022-E9ECD4180909" : null,
                   "5B018646-BCEA-4C79-A152-45F4B056B572" : null,
+                  "6BCF9287-B218-4626-B882-1F552B3C1991" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:ed8a57a9289afe0d07af9c09333d4460\/Energia.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "C6D9BE33-14C1-4C8A-9837-A7E590F27A82"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "B2828CCF-CC1E-4435-AA4D-C83BB9DA6F93"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "Energia"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.020000001415610313,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.020000001415610313,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.020000001415610313,
+                        0,
+                        0,
+                        0.049999583512544632,
+                        0,
+                        1
+                      ]
+                    }
+                  },
                   "8AB4F1B5-4B5D-4D83-9183-5EFBFB36F7D3" : null,
                   "9DE92C79-DB1D-48A9-89F2-74EBA7CB8C18" : null,
                   "9FE238BB-9E71-4700-B8C4-A58DF50E40DA" : null,
@@ -1037,232 +1263,8 @@
                       ]
                     }
                   },
-                  "A245C932-3E0E-4875-9ED1-7649847E508D" : {
-                    "overrides" : {
-                      "children" : {
-                        "USDScene" : {
-                          "overrides" : {
-                            "arguments" : [
-                              [
-                                "includeSceneScaling",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : false
-                                }
-                              ],
-                              [
-                                "subpath",
-                                {
-                                  "typeName" : "String",
-                                  "value" : ""
-                                }
-                              ],
-                              [
-                                "url",
-                                {
-                                  "typeName" : "String",
-                                  "value" : "model:91769f4a04a98fc2784ac5a7c7e7dd48\/dirt.usdz"
-                                }
-                              ],
-                              [
-                                "withDescendants",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : true
-                                }
-                              ]
-                            ],
-                            "factory" : {
-                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                              "version" : "0.0"
-                            },
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "EF8E4039-7C0D-4589-A2A2-3A4306A49BDE"
-                                }
-                              ]
-                            ]
-                          },
-                          "transform" : {
-                            "matrix" : [
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.af.Group",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "483550C3-CF7A-4AD3-9F00-4DAB2F08667F"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "Terra"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        0.020000001415610313,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.020000001415610313,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.020000001415610313,
-                        0,
-                        -0.05000000074505806,
-                        0.05000000074505806,
-                        0,
-                        1
-                      ]
-                    }
-                  },
-                  "AA58C729-C112-44C7-BC26-3551F0937283" : {
-                    "overrides" : {
-                      "children" : {
-                        "USDScene" : {
-                          "overrides" : {
-                            "arguments" : [
-                              [
-                                "includeSceneScaling",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : false
-                                }
-                              ],
-                              [
-                                "subpath",
-                                {
-                                  "typeName" : "String",
-                                  "value" : ""
-                                }
-                              ],
-                              [
-                                "url",
-                                {
-                                  "typeName" : "String",
-                                  "value" : "model:3daa963fa353bc0bfc7c6243b93deb00\/energy.usdz"
-                                }
-                              ],
-                              [
-                                "withDescendants",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : true
-                                }
-                              ]
-                            ],
-                            "factory" : {
-                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                              "version" : "0.0"
-                            },
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "7A34104C-6A9D-4D53-9EB7-AC94B0C4665C"
-                                }
-                              ]
-                            ]
-                          },
-                          "transform" : {
-                            "matrix" : [
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.af.Group",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "58BD0B0E-707A-4311-BA4D-D3E96545B778"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "Energia"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        0.020000001415610313,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.020000001415610313,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.020000001415610313,
-                        0,
-                        0,
-                        0.05000000074505806,
-                        0,
-                        1
-                      ]
-                    }
-                  },
+                  "A245C932-3E0E-4875-9ED1-7649847E508D" : null,
+                  "AA58C729-C112-44C7-BC26-3551F0937283" : null,
                   "CDC83FCA-F120-4570-BF47-97CEB5CB4FF3" : {
                     "overrides" : {
                       "arguments" : [
@@ -1736,9 +1738,9 @@
                   0.36361819505691528,
                   0.91093599796295166,
                   0,
-                  0.2933381199836731,
-                  0.24861520528793335,
-                  0.59052103757858276,
+                  1.2544440031051636,
+                  1.3543223142623901,
+                  2.9903242588043213,
                   1
                 ],
                 "sceneTransform" : [
