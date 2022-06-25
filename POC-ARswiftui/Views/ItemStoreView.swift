@@ -47,7 +47,7 @@ struct ItemStoreView: View {
                         HStack {
                             Spacer()
                             if isAvailable {
-                                if UserDefaults.standard.bool(forKey: "*ID of IAP Product*") {
+                                if isBought {
                                     NavigationLink(destination: PDFUIView(name: pdfName)) {
                                         Text("Abrir")
                                             .padding(8)
