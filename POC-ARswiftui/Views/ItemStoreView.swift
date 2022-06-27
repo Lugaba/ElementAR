@@ -6,24 +6,30 @@
 //
 
 import SwiftUI
+import StoreKit
+
 
 struct ItemStoreView: View {
+    private var product: SKProduct
     private var name: String
     private var imageName: String
-    private var price: Float
+    private var price: NSDecimalNumber
     private var description: String
     private var pdfName: String
     private var isBought: Bool
     private var isAvailable: Bool
+    private var storeManager: StoreManager
     
-    init(name: String, imageName: String, price: Float, description: String, pdfName: String, isBought: Bool, isAvailable: Bool) {
-        self.name = name
-        self.imageName = imageName
-        self.price = price
-        self.description = description
-        self.pdfName = pdfName
-        self.isBought = isBought
-        self.isAvailable = isAvailable
+    init(product: SKProduct , storeManager: StoreManager) {
+        self.product = product
+        self.name = product.localizedTitle
+        self.imageName = product.productIdentifier
+        self.price = product.price
+        self.description = product.localizedDescription
+        self.pdfName = product.productIdentifier
+        self.isBought = UserDefaults.standard.bool(forKey: "\(product.productIdentifier)")
+        self.isAvailable = true
+        self.storeManager = storeManager
     }
     
     var body: some View {
@@ -57,8 +63,10 @@ struct ItemStoreView: View {
                                     .background(Color.blue)
                                     .cornerRadius(10)
                                 } else {
-                                    NavigationLink(destination: PDFUIView(name: pdfName)) {
-                                        Text("R$ \(price, specifier: "%.2f")")
+                                    Button(action: {
+                                        storeManager.purchaseProduct(product: self.product)
+                                    }) {
+                                        Text("\(price)")
                                             .padding(8)
                                             .foregroundColor(.white)
                                             .font(.system(.body, design: .rounded))
@@ -88,11 +96,5 @@ struct ItemStoreView: View {
         .padding(.trailing, 8)
         .padding(.leading, 8)
         .padding(.top, 8)
-    }
-}
-
-struct ItemStoreView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemStoreView(name: "Free", imageName: "fire", price: 10, description: "Muito bacana", pdfName: "freeCards", isBought: true, isAvailable: true)
     }
 }
