@@ -14,12 +14,12 @@ struct ContentView : View {
                     Spacer()
                     VStack {
                         NavigationLink(destination: StoreView()) {
-                            ButtonView(systemIcon: "cart.fill")
+                            ButtonView(systemIcon: "cart.fill", size: 60)
                         }
                         Button {
                             openConquistas.toggle()
                         } label: {
-                            ButtonView(systemIcon: "menucard.fill")
+                            ButtonView(systemIcon: "menucard.fill", size: 60)
                         }
                         Spacer()
                     }
@@ -28,7 +28,6 @@ struct ContentView : View {
                 InfoGridView(openConquistas: $openConquistas)
             }
         }
-        
     }
 }
 
