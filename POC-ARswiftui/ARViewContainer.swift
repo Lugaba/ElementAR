@@ -171,7 +171,6 @@ struct ARViewContainer: UIViewRepresentable {
         } else {
             print("People Segmentation not enabled.")
         }
-        
         arView.session.run(configuration)
         return arView
     }
