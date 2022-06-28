@@ -23,7 +23,7 @@
 		DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7A284E8C9700355702 /* Assets.xcassets */; };
 		DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */; };
 		DF9FBA18286A16B400711ED7 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBA17286A16B400711ED7 /* TextView.swift */; };
-		DFABBBED28639147000C6616 /* freeCards.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFABBBEC28639147000C6616 /* freeCards.pdf */; };
+		DFABBBED28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */; };
 		DFDD9BF52867449B0060B097 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDD9BF42867449B0060B097 /* StoreKit.framework */; };
 		DFDD9BF8286744D00060B097 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDD9BF7286744D00060B097 /* StoreManager.swift */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,7 @@
 		DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF8D0D84284E8F5300355702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DF9FBA17286A16B400711ED7 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
-		DFABBBEC28639147000C6616 /* freeCards.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = freeCards.pdf; sourceTree = "<group>"; };
+		DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.ElementarDeck.pdf; sourceTree = "<group>"; };
 		DFDD9BF42867449B0060B097 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DFDD9BF7286744D00060B097 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 				DF14D26A2851160800F0AC6E /* ARViewContainer.swift */,
 				DF8D0D78284E8C9500355702 /* Experience.rcproject */,
 				DF8D0D7A284E8C9700355702 /* Assets.xcassets */,
-				DFABBBEC28639147000C6616 /* freeCards.pdf */,
+				DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */,
 				DF8D0D7C284E8C9700355702 /* Preview Content */,
 			);
 			path = "POC-ARswiftui";
@@ -215,7 +215,7 @@
 			files = (
 				DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */,
 				DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */,
-				DFABBBED28639147000C6616 /* freeCards.pdf in Resources */,
+				DFABBBED28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

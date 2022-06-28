@@ -15,7 +15,6 @@ struct StoreView: View {
     var body: some View {
         VStack(spacing: 0) {
             ScrollView {
-                let _ = print(storeManager.getProducts(productIDs: ["lucaHummel.elementar.Store.IAP.ElementarDeck"]))
                 Text("⚠️ Você precisa de uma impressora ⚠️")
                     .padding()
                     .background(.yellow.opacity(0.8))
@@ -23,7 +22,6 @@ struct StoreView: View {
                     .padding(.top, 20)
                     .font(.system(.body, design: .rounded))
 
-                let _ = print(storeManager.myProducts)
                 ForEach(storeManager.myProducts, id: \.self) { product in
                     ItemStoreView(product: product, storeManager: storeManager)
                 }
