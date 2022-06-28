@@ -54,7 +54,7 @@ struct InfoGridView: View {
 
 struct InfoStoreView: View {
     var storeManager = StoreManager()
-    let productIDs = ["lucaHummel.elementar.Store.IAP.ElementarDeck"]
+    let productIDs = ["lucaHummel.elementar.Store.IAP.ElementarDeck", "lucaHummel.elementar.Store.IAP.FreeDeck"]
 
     
     init() {

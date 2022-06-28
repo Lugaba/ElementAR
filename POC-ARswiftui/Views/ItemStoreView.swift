@@ -17,7 +17,6 @@ struct ItemStoreView: View {
     private var description: String
     private var pdfName: String
     private var isBought: Bool
-    private var isAvailable: Bool
     private var storeManager: StoreManager
     
     init(product: SKProduct , storeManager: StoreManager) {
@@ -28,7 +27,6 @@ struct ItemStoreView: View {
         self.description = product.localizedDescription
         self.pdfName = product.productIdentifier
         self.isBought = UserDefaults.standard.bool(forKey: "\(product.productIdentifier)")
-        self.isAvailable = true
         self.storeManager = storeManager
     }
     
@@ -52,47 +50,38 @@ struct ItemStoreView: View {
                             .fixedSize(horizontal: false, vertical: true)
                         HStack {
                             Spacer()
-                            if isAvailable {
-                                if isBought {
-                                    NavigationLink(destination: PDFUIView(name: pdfName)) {
-                                        Text("Abrir")
-                                            .padding(8)
-                                            .foregroundColor(.white)
-                                            .font(.system(.body, design: .rounded))
-                                    }
-                                    .background(Color.blue)
-                                    .cornerRadius(10)
-                                } else {
-                                    Button(action: {
-                                        storeManager.purchaseProduct(product: self.product)
-                                    }) {
-                                        Text("\(price)")
-                                            .padding(8)
-                                            .foregroundColor(.white)
-                                            .font(.system(.body, design: .rounded))
-                                    }
-                                    .background(Color.green)
-                                    .cornerRadius(10)
+                            if isBought {
+                                NavigationLink(destination: PDFUIView(name: pdfName)) {
+                                    Text("Abrir")
+                                        .padding(8)
+                                        .foregroundColor(.white)
+                                        .font(.system(.body, design: .rounded))
                                 }
+                                .background(Color.blue)
+                                .cornerRadius(10)
                             } else {
-                                Text("Em breve")
-                                    .padding(8)
-                                    .foregroundColor(.white)
-                                    .font(.system(.body, design: .rounded))
-                                    .background(Color.gray)
-                                    .cornerRadius(10)
+                                Button(action: {
+                                    storeManager.purchaseProduct(product: self.product)
+                                }) {
+                                    Text("R$ \(price)")
+                                        .padding(8)
+                                        .foregroundColor(.white)
+                                        .font(.system(.body, design: .rounded))
+                                }
+                                .background(Color.green)
+                                .cornerRadius(10)
                             }
+                            
                             
                         }
                         
                     }
                 }.frame(alignment: .leading)
             }.padding(8)
-
+            
         }
         .frame(height: 150)
         .cornerRadius(10)
-        .navigationBarTitleDisplayMode(.inline)
         .padding(.trailing, 8)
         .padding(.leading, 8)
         .padding(.top, 8)

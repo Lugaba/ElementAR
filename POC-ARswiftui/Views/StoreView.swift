@@ -28,6 +28,7 @@ struct StoreView: View {
             }
         }
         .navigationTitle("Store")
+        .navigationBarTitleDisplayMode(.large)
         .toolbar(content: {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
