@@ -7,8 +7,6 @@ struct ContentView : View {
     @State var openConquistas = false
     @State var text = "Lava"
     @State var background = Color.red
-    @StateObject var storeManager = StoreManager()
-    let productIDs = ["lucaHummel.elementar.Store.IAP.ElementarDeck"]
 
     
     var body: some View {
@@ -18,11 +16,7 @@ struct ContentView : View {
                 HStack {
                     Spacer()
                     VStack {
-                        NavigationLink(destination: StoreView(storeManager: storeManager)
-                            .onAppear(perform: {
-                                storeManager.payment.default().add(storeManager)
-                                storeManager.getProducts(productIDs: productIDs)
-                            })) {
+                        NavigationLink(destination: InfoStoreView()) {
                                 ButtonView(systemIcon: "cart.fill")
                             }
                         Button {
@@ -55,6 +49,21 @@ struct InfoGridView: View {
         } else {
             EmptyView()
         }
+    }
+}
+
+struct InfoStoreView: View {
+    var storeManager = StoreManager()
+    let productIDs = ["lucaHummel.elementar.Store.IAP.ElementarDeck"]
+
+    
+    init() {
+        storeManager.payment.default().add(storeManager)
+        storeManager.getProducts(productIDs: productIDs)
+    }
+    
+    var body: some View {
+        StoreView(storeManager: storeManager)
     }
 }
 
