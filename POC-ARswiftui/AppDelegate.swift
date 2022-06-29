@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             contentView = AnyView(OnBoardingView())
         }
 
+        let contentView = ContentView()
+        
         // Use a UIHostingController as window root view controller.
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = UIHostingController(rootView: contentView)
