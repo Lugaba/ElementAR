@@ -5,16 +5,28 @@
   },
   "resources" : [
     {
-      "filename" : "Água.arreferenceimage"
+      "filename" : "Agua.arreferenceimage"
     },
     {
       "filename" : "Ar.arreferenceimage"
+    },
+    {
+      "filename" : "Chuva.arreferenceimage"
+    },
+    {
+      "filename" : "Energia.arreferenceimage"
     },
     {
       "filename" : "Fogo.arreferenceimage"
     },
     {
       "filename" : "Lava.arreferenceimage"
+    },
+    {
+      "filename" : "Pedra.arreferenceimage"
+    },
+    {
+      "filename" : "Poeira.arreferenceimage"
     },
     {
       "filename" : "Terra.arreferenceimage"

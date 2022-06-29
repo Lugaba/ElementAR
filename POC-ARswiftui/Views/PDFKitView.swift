@@ -25,23 +25,28 @@ struct PDFKitView: UIViewRepresentable {
 
 struct PDFUIView: View {
     
-    let pdfDoc: PDFDocument
-    let url: URL
+    var pdfDoc: PDFDocument?
+    let url: URL?
     
     init(name: String) {
-        url = Bundle.main.url(forResource: name, withExtension: "pdf")!
-        pdfDoc = PDFDocument(url: url)!
+        url = Bundle.main.url(forResource: name, withExtension: "pdf")
+        if let url = url {
+            self.pdfDoc = PDFDocument(url: url)
+        }
+        
     }
     
     var body: some View {
-        PDFKitView(showing: pdfDoc)
-            .navigationTitle("PDF")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                Button(action: actionSheet) {
-                    Image(systemName: "square.and.arrow.up").imageScale(.large)
+        if let pdfDoc = pdfDoc {
+            PDFKitView(showing: pdfDoc)
+                .navigationTitle("PDF")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    Button(action: actionSheet) {
+                        Image(systemName: "square.and.arrow.up").imageScale(.large)
+                    }
                 }
-            }
+        }
     }
     
     func actionSheet() {

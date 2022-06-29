@@ -10,8 +10,10 @@ import SwiftUI
 struct PackageContent: Identifiable {
     var name: String
     var imageName: String
-    var price: Float
+    var price: NSDecimalNumber
     var description: String
     var pdfName: String
+    var isBought: Bool
+    var isAvailable: Bool
     var id: String { name }
 }
