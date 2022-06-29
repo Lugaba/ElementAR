@@ -25,8 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(true, forKey: "isOld")
             contentView = AnyView(OnBoardingView())
         }
-
-        let contentView = ContentView()
         
         // Use a UIHostingController as window root view controller.
         let window = UIWindow(frame: UIScreen.main.bounds)

@@ -17,7 +17,7 @@ struct ContentView : View {
                     Spacer()
                     VStack {
                         NavigationLink(destination: InfoStoreView()) {
-                                ButtonView(systemIcon: "cart.fill")
+                            ButtonView(systemIcon: "cart.fill", size: 60)
                             }
                         Button {
                             openConquistas.toggle()
