@@ -10,11 +10,11 @@ import SwiftUI
 struct CollectionGridView: View {
     @Binding var openConquistas: Bool
     let elements: [CellContent] = [CellContent(color: Color.redElementar, name: "Fogo", icon: Image("fireIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Água", icon: Image("waterIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Agua", icon: Image("waterIcon")),
                                    CellContent(color: Color.yellowElementar, name: "Ar", icon: Image("airIcon")),
                                    CellContent(color: Color.greenElementar, name: "Terra", icon: Image("earthIcon")),
                                    CellContent(color: Color.redElementar, name: "Lava", icon: Image("lavaIcon")),
-                                   CellContent(color: Color.yellowElementar, name: "Pó", icon: Image("dustIcon")),
+                                   CellContent(color: Color.yellowElementar, name: "Poeira", icon: Image("dustIcon")),
                                    CellContent(color: Color.greenElementar, name: "Lama", icon: Image("mudIcon")),
                                    CellContent(color: Color.yellowElementar, name: "Energia", icon: Image("energyIcon")),
                                    CellContent(color: Color.blueElementar, name: "Chuva", icon: Image("rainIcon")),
@@ -38,7 +38,7 @@ struct CollectionGridView: View {
                         .foregroundColor(.white)
                     Spacer()
                 }
-                Text("/\(elements.count)")
+                Text("\(elements.count)")
                     .font(.system(.title3, design: .rounded))
                 TabView {
                     VStack {

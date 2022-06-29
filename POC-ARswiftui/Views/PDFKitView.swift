@@ -47,7 +47,6 @@ struct PDFUIView: View {
                     }
                 }
         }
-        
     }
     
     func actionSheet() {

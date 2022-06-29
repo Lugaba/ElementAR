@@ -23,10 +23,10 @@ struct ARViewContainer: UIViewRepresentable {
         var mixing = false
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
-        var imageNames: [String] = ["Água", "Ar", "Fogo", "Terra"]
-        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArÁgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "TerraÁgua": "Lama", "FogoÁgua": "Vapor", "LavaÁgua": "Pedra"]
+        var imageNames: [String] = ["Agua", "Ar", "Fogo", "Terra"]
+        var dictMixs:[String:String] = ["ArTerra": "Poeira", "AguaAr": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "AguaLava": "Pedra"]
         var scene: Experience.Elements?
-        var isBought = true
+        var isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
         
         
         init(parent: ARViewContainer) {
@@ -65,6 +65,7 @@ struct ARViewContainer: UIViewRepresentable {
                     if let  scene = scene {
                         if let obj = scene.findEntity(named: cartaObjeto) {
                             let objClone = obj.clone(recursive: true)
+                            
                             objClone.position.x = 0
                             objClone.position.y = 0.025
                             objClone.position.z = 0
@@ -105,6 +106,7 @@ struct ARViewContainer: UIViewRepresentable {
                     print(mixResult)
                     if let scene = scene {
                         if let obj = scene.findEntity(named: mixResult) {
+                            
                             obj.position.y = 0.075
                             obj.position.x = positionMixX/2 // positivo para direita
                             obj.position.z = positionMixZ/2 // positivo pra baixo
