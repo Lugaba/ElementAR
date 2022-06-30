@@ -27,6 +27,7 @@ struct ARViewContainer: UIViewRepresentable {
         var dictMixs:[String:String] = ["ArTerra": "Poeira", "AguaAr": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "AguaLava": "Pedra"]
         var scene: Experience.Elements?
         var isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
+        var numberDiscovered: Int = UserDefaults.standard.integer(forKey: "numberDiscovered")
         
         
         init(parent: ARViewContainer) {
@@ -51,7 +52,11 @@ struct ARViewContainer: UIViewRepresentable {
                     
                     entity.name = imageName
                     if imageNames.contains(imageName) {
+                        if !UserDefaults.standard.bool(forKey: imageName) {
+                            UserDefaults.standard.set(numberDiscovered+1, forKey: "numberDiscovered")
+                        }
                         UserDefaults.standard.set(true, forKey: imageName)
+                        
                         cartaObjeto = imageName
                     } else {
                         if isBought {
@@ -99,7 +104,11 @@ struct ARViewContainer: UIViewRepresentable {
                     }
                     
                     if let nameDict = dictMixs[mixResult] {
+                        if !UserDefaults.standard.bool(forKey: nameDict) {
+                            UserDefaults.standard.set(numberDiscovered+1, forKey: "numberDiscovered")
+                        }
                         UserDefaults.standard.set(true, forKey: nameDict)
+                        
                         mixResult = nameDict
                     }
                     

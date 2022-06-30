@@ -26,7 +26,7 @@ struct CollectionGridView: View {
         GridItem(.adaptive(minimum: 200)),
         GridItem(.adaptive(minimum: 200))
     ]
-    var indexFind = 0
+    var indexFind = UserDefaults.standard.integer(forKey: "numberDiscovered")
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
@@ -38,7 +38,7 @@ struct CollectionGridView: View {
                         .foregroundColor(.white)
                     Spacer()
                 }
-                Text("\(elements.count)")
+                Text("\(indexFind)/\(elements.count)")
                     .font(.system(.title3, design: .rounded))
                 TabView {
                     VStack {
