@@ -87,9 +87,29 @@ struct ARViewContainer: UIViewRepresentable {
         
         //Checks for tracking status
         func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
+            for anchor in anchors {
+                if let anchorName = entidadesDict[anchor.name!], let removeMix = anchorName.findEntity(named: "blocked") {
+                    self.isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
+                    if let scene = scene, let obj = scene.findEntity(named: "unknow"), isBought {
+                        anchorName.removeChild(removeMix)
+                        let objClone = obj.clone(recursive: true)
+                        objClone.position.x = 0
+                        objClone.position.y = 0.025
+                        objClone.position.z = 0
+                        
+                        objetos.append(objClone)
+                        anchorName.addChild(objClone)
+                    }
+                }
+            }
+            
             if anchors.count == 2 {
                 if mixing == false {
                     mixing = true
+                    
+                    var isDiscovered1: Bool = false
+                    var isDiscovered2: Bool = false
+                    
                     let positionFirst = anchors[0].transform.columns.3
                     let positionSecond = anchors[1].transform.columns.3
                     
@@ -97,6 +117,9 @@ struct ARViewContainer: UIViewRepresentable {
                     let positionMixZ: Float = positionSecond.z - positionFirst.z
                     
                     if let nome1 = anchors[0].name, let nome2 = anchors[1].name, let letra1 = nome1.first, let letra2 = nome2.first {
+                        isDiscovered1 = UserDefaults.standard.bool(forKey: "\(nome1)")
+                        isDiscovered2 = UserDefaults.standard.bool(forKey: "\(nome2)")
+                        
                         if letra1 < letra2 {
                             mixResult = nome1 + nome2
                         } else {
@@ -104,19 +127,22 @@ struct ARViewContainer: UIViewRepresentable {
                         }
                     }
                     
-                    if let nameDict = dictMixs[mixResult] {
-                        if !UserDefaults.standard.bool(forKey: nameDict) {
-                            numberDiscovered += 1
-                            UserDefaults.standard.set(numberDiscovered, forKey: "numberDiscovered")
-                        }
-                        UserDefaults.standard.set(true, forKey: nameDict)
-                        
-                        mixResult = nameDict
-                    }
+                    
                     
                     print(mixResult)
-                    if let scene = scene {
+                    if let scene = scene, isDiscovered1, isDiscovered2 {
+                        if let nameDict = dictMixs[mixResult] {
+                            if !UserDefaults.standard.bool(forKey: nameDict) {
+                                numberDiscovered += 1
+                                UserDefaults.standard.set(numberDiscovered, forKey: "numberDiscovered")
+                            }
+                            UserDefaults.standard.set(true, forKey: nameDict)
+                            
+                            mixResult = nameDict
+                        }
                         if let obj = scene.findEntity(named: mixResult) {
+                            
+                            
                             
                             obj.position.y = 0.075
                             obj.position.x = positionMixX/2 // positivo para direita
@@ -129,8 +155,9 @@ struct ARViewContainer: UIViewRepresentable {
                                 imageNames.append(mixResult)
                                 UserDefaults.standard.set(imageNames, forKey: "imageNames")
                             }
-
-                            if let anchorMix = entidadesDict[mixResult], let removeMix = anchorMix.findEntity(named: "unknow"), isBought {
+                            
+                            self.isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
+                            if let anchorMix = entidadesDict[mixResult], let removeMix = anchorMix.findEntity(named: "unknow") ?? anchorMix.findEntity(named: "blocked"), isBought {
                                 anchorMix.removeChild(removeMix)
                                 let objClone = obj.clone(recursive: true)
                                 objClone.position.x = 0
@@ -161,7 +188,7 @@ struct ARViewContainer: UIViewRepresentable {
                 objeto.transform.rotation *= simd_quatf(angle: 0.005, axis: SIMD3<Float>(0,1,0))
             }
         }
-                
+        
     }
     
     func makeUIView(context: Context) -> ARView {
