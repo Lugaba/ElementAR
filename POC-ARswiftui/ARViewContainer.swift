@@ -92,6 +92,7 @@ struct ARViewContainer: UIViewRepresentable {
                     self.isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
                     if let scene = scene, let obj = scene.findEntity(named: "unknow"), isBought {
                         anchorName.removeChild(removeMix)
+                        objetos.remove(at: objetos.firstIndex(of: removeMix)!)
                         let objClone = obj.clone(recursive: true)
                         objClone.position.x = 0
                         objClone.position.y = 0.025
@@ -126,10 +127,7 @@ struct ARViewContainer: UIViewRepresentable {
                             mixResult = nome2 + nome1
                         }
                     }
-                    
-                    
-                    
-                    print(mixResult)
+ 
                     if let scene = scene, isDiscovered1, isDiscovered2 {
                         if let nameDict = dictMixs[mixResult] {
                             if !UserDefaults.standard.bool(forKey: nameDict) {
@@ -141,9 +139,6 @@ struct ARViewContainer: UIViewRepresentable {
                             mixResult = nameDict
                         }
                         if let obj = scene.findEntity(named: mixResult) {
-                            
-                            
-                            
                             obj.position.y = 0.075
                             obj.position.x = positionMixX/2 // positivo para direita
                             obj.position.z = positionMixZ/2 // positivo pra baixo
@@ -159,6 +154,7 @@ struct ARViewContainer: UIViewRepresentable {
                             self.isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
                             if let anchorMix = entidadesDict[mixResult], let removeMix = anchorMix.findEntity(named: "unknow") ?? anchorMix.findEntity(named: "blocked"), isBought {
                                 anchorMix.removeChild(removeMix)
+                                objetos.remove(at: objetos.firstIndex(of: removeMix)!)
                                 let objClone = obj.clone(recursive: true)
                                 objClone.position.x = 0
                                 objClone.position.y = 0.025
