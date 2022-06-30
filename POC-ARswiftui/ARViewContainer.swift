@@ -53,7 +53,8 @@ struct ARViewContainer: UIViewRepresentable {
                     entity.name = imageName
                     if imageNames.contains(imageName) {
                         if !UserDefaults.standard.bool(forKey: imageName) {
-                            UserDefaults.standard.set(numberDiscovered+1, forKey: "numberDiscovered")
+                            numberDiscovered += 1
+                            UserDefaults.standard.set(numberDiscovered, forKey: "numberDiscovered")
                         }
                         UserDefaults.standard.set(true, forKey: imageName)
                         
@@ -105,7 +106,8 @@ struct ARViewContainer: UIViewRepresentable {
                     
                     if let nameDict = dictMixs[mixResult] {
                         if !UserDefaults.standard.bool(forKey: nameDict) {
-                            UserDefaults.standard.set(numberDiscovered+1, forKey: "numberDiscovered")
+                            numberDiscovered += 1
+                            UserDefaults.standard.set(numberDiscovered, forKey: "numberDiscovered")
                         }
                         UserDefaults.standard.set(true, forKey: nameDict)
                         
