@@ -58,7 +58,7 @@ struct OnBoardingView: View {
                 Spacer()
             }.padding()
             .background(Color.blackElementar)
-        }
+        }.preferredColorScheme(.dark)
         
     }
 }

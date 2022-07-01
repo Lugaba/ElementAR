@@ -33,7 +33,7 @@ struct ContentView : View {
                 }
                 InfoGridView(openConquistas: $openConquistas)
             }
-        }
+        }.preferredColorScheme(.dark)
     }
 }
 

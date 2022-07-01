@@ -28,7 +28,7 @@ struct StoreView: View {
                 }
             }
         }
-        .navigationTitle("Store").foregroundColor(.white)
+        .navigationTitle("Store")
         .navigationBarTitleDisplayMode(.large)
         .toolbar(content: {
                 ToolbarItem(placement: .navigationBarTrailing) {
