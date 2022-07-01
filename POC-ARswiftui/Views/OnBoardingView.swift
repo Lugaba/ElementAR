@@ -11,6 +11,13 @@ struct OnBoardingView: View {
     let images = ["printer.fill", "camera.on.rectangle.fill", "leaf.fill"]
     let texts = ["1. Imprima as cartas", "2. Aponte a câmera para as cartas", "3. Descubra novos elementos"]
     
+    init() {
+        scene = try? Experience.loadElements()
+        if scene == nil {
+            fatalError("Can't load the 3D models")
+        }
+    }
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: 24) {

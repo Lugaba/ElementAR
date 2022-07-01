@@ -38,7 +38,7 @@ struct CollectionCellView: View {
                     Text(name)
                         .padding(.horizontal)
                         .background(Capsule().fill(Color.greyElementar))
-                }   .font(.system(.title3, design: .rounded) .weight(.bold))
+                }   .font(.system(.subheadline, design: .rounded) .weight(.bold))
                     .foregroundColor(Color.whiteElementar)
                     .padding(.vertical)
             }

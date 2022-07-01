@@ -9,6 +9,8 @@ import ARKit
 import SwiftUI
 import RealityKit
 
+var scene: Experience.Elements?
+
 struct ARViewContainer: UIViewRepresentable {
     var arView = ARView(frame: .zero)
     
@@ -24,8 +26,7 @@ struct ARViewContainer: UIViewRepresentable {
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
         var imageNames: [String] = ["Agua", "Ar", "Fogo", "Terra"]
-        var dictMixs:[String:String] = ["ArTerra": "Poeira", "AguaAr": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "AguaLava": "Pedra"]
-        var scene: Experience.Elements?
+        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArAgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "AguaLava": "Pedra"]
         var isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
         var numberDiscovered: Int = UserDefaults.standard.integer(forKey: "numberDiscovered")
         
@@ -33,9 +34,12 @@ struct ARViewContainer: UIViewRepresentable {
         init(parent: ARViewContainer) {
             self.parent = parent
             parent.arView.environment.lighting.intensityExponent = 2
-            self.scene = try? Experience.loadElements()
-            if self.scene == nil {
-                fatalError("Can't load the 3D models")
+            if scene == nil {
+                do {
+                    scene = try Experience.loadElements()
+                } catch {
+                    fatalError()
+                }
             }
             if let imageNames = UserDefaults.standard.object(forKey: "imageNames") as? [String] {
                 self.imageNames = imageNames
@@ -127,7 +131,7 @@ struct ARViewContainer: UIViewRepresentable {
                             mixResult = nome2 + nome1
                         }
                     }
- 
+                    print(mixResult)
                     if let scene = scene, isDiscovered1, isDiscovered2 {
                         if let nameDict = dictMixs[mixResult] {
                             if !UserDefaults.standard.bool(forKey: nameDict) {
@@ -176,7 +180,7 @@ struct ARViewContainer: UIViewRepresentable {
                 
                 if let entidadeEle = entidadesDict[anchorMixName], let removeMix = entidadeEle.findEntity(named: mixResult) {
                     // Descobri que addChild remove do parent atual e coloca no novo parent
-                    self.scene?.addChild(removeMix)
+                    scene?.addChild(removeMix)
                 }
             }
             
