@@ -16,6 +16,7 @@ struct StoreView: View {
         VStack(spacing: 0) {
             ScrollView {
                 Text("⚠️ Você precisa de uma impressora ⚠️")
+                    .foregroundColor(.white)
                     .padding()
                     .background(.yellow.opacity(0.8))
                     .cornerRadius(15)
@@ -27,18 +28,21 @@ struct StoreView: View {
                 }
             }
         }
-        .navigationTitle("Store")
+        .navigationTitle("Store").foregroundColor(.white)
         .navigationBarTitleDisplayMode(.large)
         .toolbar(content: {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         storeManager.restoreProducts()
                     }) {
-                        Text("Restore Purchases ")
+                        Text("Restore Purchases")
+                            .foregroundColor(.green)
                     }
                 }
             })
+        .background(Color.blackElementar)
     }
+
 }
 
 struct StoreView_Previews: PreviewProvider {

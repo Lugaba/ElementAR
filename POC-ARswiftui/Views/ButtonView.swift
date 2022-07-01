@@ -10,15 +10,17 @@ import SwiftUI
 struct ButtonView: View {
     private var systemIcon: String
     private var size: CGFloat
+    private var color: Color
     
-    init(systemIcon: String, size: CGFloat) {
+    init(systemIcon: String, size: CGFloat, color: Color) {
         self.systemIcon = systemIcon
         self.size = size
+        self.color = color
     }
     
     var body: some View {
         ZStack {
-            Color.blackElementar
+            color
             Image(systemName: systemIcon)
                 .resizable()
                 .scaledToFit()
@@ -33,7 +35,7 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(systemIcon: "menucard.fill", size: 60)
+        ButtonView(systemIcon: "menucard.fill", size: 60, color: Color.blackElementar)
             .previewLayout(.sizeThatFits)
     }
 }

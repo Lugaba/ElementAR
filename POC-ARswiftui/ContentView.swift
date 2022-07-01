@@ -17,12 +17,12 @@ struct ContentView : View {
                     Spacer()
                     VStack {
                         NavigationLink(destination: InfoStoreView()) {
-                            ButtonView(systemIcon: "cart.fill", size: 60)
+                            ButtonView(systemIcon: "cart.fill", size: 60, color: Color.blackElementar)
                             }
                         Button {
                             openConquistas.toggle()
                         } label: {
-                            ButtonView(systemIcon: "menucard.fill", size: 60)
+                            ButtonView(systemIcon: "menucard.fill", size: 60, color: Color.blackElementar)
                         }
                         Spacer()
                     }

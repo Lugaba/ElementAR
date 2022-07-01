@@ -40,6 +40,7 @@ struct CollectionGridView: View {
                 }
                 Text("\(indexFind)/\(elements.count)")
                     .font(.system(.title3, design: .rounded))
+                    .foregroundColor(.white)
                 TabView {
                     VStack {
                         LazyVGrid(columns: columns, spacing: 8) {
