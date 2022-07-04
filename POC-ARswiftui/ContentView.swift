@@ -27,10 +27,6 @@ struct ContentView : View {
                         Spacer()
                     }
                 }.padding()
-                VStack {
-                    Spacer()
-                    textView(text: $text, background: $background)
-                }
                 InfoGridView(openConquistas: $openConquistas)
             }
         }.preferredColorScheme(.dark)

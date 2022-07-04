@@ -23,7 +23,6 @@
 		DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D78284E8C9500355702 /* Experience.rcproject */; };
 		DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7A284E8C9700355702 /* Assets.xcassets */; };
 		DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */; };
-		DF9FBA18286A16B400711ED7 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBA17286A16B400711ED7 /* TextView.swift */; };
 		DFABBBED28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */; };
 		DFDD9BF52867449B0060B097 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDD9BF42867449B0060B097 /* StoreKit.framework */; };
 		DFDD9BF8286744D00060B097 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDD9BF7286744D00060B097 /* StoreManager.swift */; };
@@ -48,7 +47,6 @@
 		DF8D0D7A284E8C9700355702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF8D0D84284E8F5300355702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		DF9FBA17286A16B400711ED7 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.ElementarDeck.pdf; sourceTree = "<group>"; };
 		DFDD9BF42867449B0060B097 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DFDD9BF7286744D00060B097 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 				DF7A7E212860D98900F5D0A9 /* ItemStoreView.swift */,
 				DF1115C22860E9AC00F352D1 /* StoreView.swift */,
 				DF7BC416286A21D10051AD1A /* OnBoardingView.swift */,
-				DF9FBA17286A16B400711ED7 /* TextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,7 +235,6 @@
 				DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */,
 				DF14D26B2851160800F0AC6E /* ARViewContainer.swift in Sources */,
 				C810FF27284FBF3B00B4BCAF /* ColorExtension.swift in Sources */,
-				DF9FBA18286A16B400711ED7 /* TextView.swift in Sources */,
 				C830326328510B3200683C6F /* ButtonView.swift in Sources */,
 				DF7BC417286A21D10051AD1A /* OnBoardingView.swift in Sources */,
 				DF765B1C28637F250049ACB0 /* PackageContent.swift in Sources */,

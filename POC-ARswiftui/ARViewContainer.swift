@@ -77,7 +77,7 @@ struct ARViewContainer: UIViewRepresentable {
                             let objClone = obj.clone(recursive: true)
                             
                             objClone.position.x = 0
-                            objClone.position.y = 0.025
+                            objClone.position.y = 0.015
                             objClone.position.z = 0
                             
                             objetos.append(objClone)
@@ -99,7 +99,7 @@ struct ARViewContainer: UIViewRepresentable {
                         objetos.remove(at: objetos.firstIndex(of: removeMix)!)
                         let objClone = obj.clone(recursive: true)
                         objClone.position.x = 0
-                        objClone.position.y = 0.025
+                        objClone.position.y = 0.015
                         objClone.position.z = 0
                         
                         objetos.append(objClone)
@@ -161,7 +161,7 @@ struct ARViewContainer: UIViewRepresentable {
                                 objetos.remove(at: objetos.firstIndex(of: removeMix)!)
                                 let objClone = obj.clone(recursive: true)
                                 objClone.position.x = 0
-                                objClone.position.y = 0.025
+                                objClone.position.y = 0.015
                                 objClone.position.z = 0
                                 
                                 objetos.append(objClone)
