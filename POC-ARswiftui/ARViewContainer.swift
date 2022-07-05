@@ -131,7 +131,6 @@ struct ARViewContainer: UIViewRepresentable {
                             mixResult = nome2 + nome1
                         }
                     }
-                    print(mixResult)
                     if let scene = scene, isDiscovered1, isDiscovered2 {
                         if let nameDict = dictMixs[mixResult] {
                             if !UserDefaults.standard.bool(forKey: nameDict) {
