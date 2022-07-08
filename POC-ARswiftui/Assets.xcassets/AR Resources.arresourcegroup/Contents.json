@@ -11,7 +11,22 @@
       "filename" : "Ar.arreferenceimage"
     },
     {
+      "filename" : "Areia.arreferenceimage"
+    },
+    {
+      "filename" : "Argila.arreferenceimage"
+    },
+    {
+      "filename" : "Arvore.arreferenceimage"
+    },
+    {
+      "filename" : "Carvao.arreferenceimage"
+    },
+    {
       "filename" : "Chuva.arreferenceimage"
+    },
+    {
+      "filename" : "Cristal.arreferenceimage"
     },
     {
       "filename" : "Energia.arreferenceimage"
@@ -20,7 +35,25 @@
       "filename" : "Fogo.arreferenceimage"
     },
     {
+      "filename" : "Gelo.arreferenceimage"
+    },
+    {
+      "filename" : "Grama.arreferenceimage"
+    },
+    {
+      "filename" : "Lamina.arreferenceimage"
+    },
+    {
       "filename" : "Lava.arreferenceimage"
+    },
+    {
+      "filename" : "Lua.arreferenceimage"
+    },
+    {
+      "filename" : "Madeira.arreferenceimage"
+    },
+    {
+      "filename" : "Metal.arreferenceimage"
     },
     {
       "filename" : "Pedra.arreferenceimage"
@@ -29,7 +62,19 @@
       "filename" : "Poeira.arreferenceimage"
     },
     {
+      "filename" : "Polvora.arreferenceimage"
+    },
+    {
+      "filename" : "Semente.arreferenceimage"
+    },
+    {
+      "filename" : "Sol.arreferenceimage"
+    },
+    {
       "filename" : "Terra.arreferenceimage"
+    },
+    {
+      "filename" : "Vidro.arreferenceimage"
     }
   ]
 }

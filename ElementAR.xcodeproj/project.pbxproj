@@ -23,7 +23,8 @@
 		DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D78284E8C9500355702 /* Experience.rcproject */; };
 		DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7A284E8C9700355702 /* Assets.xcassets */; };
 		DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */; };
-		DFABBBED28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */; };
+		DFA808D52878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFA808D32878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf */; };
+		DFA808D62878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFA808D42878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */; };
 		DFDD9BF52867449B0060B097 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDD9BF42867449B0060B097 /* StoreKit.framework */; };
 		DFDD9BF8286744D00060B097 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDD9BF7286744D00060B097 /* StoreManager.swift */; };
 /* End PBXBuildFile section */
@@ -47,7 +48,8 @@
 		DF8D0D7A284E8C9700355702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF8D0D84284E8F5300355702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.ElementarDeck.pdf; sourceTree = "<group>"; };
+		DFA808D32878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.FreeDeck.pdf; sourceTree = "<group>"; };
+		DFA808D42878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.ElementarDeck.pdf; sourceTree = "<group>"; };
 		DFDD9BF42867449B0060B097 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DFDD9BF7286744D00060B097 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +127,8 @@
 				DF14D26A2851160800F0AC6E /* ARViewContainer.swift */,
 				DF8D0D78284E8C9500355702 /* Experience.rcproject */,
 				DF8D0D7A284E8C9700355702 /* Assets.xcassets */,
-				DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */,
+				DFA808D42878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */,
+				DFA808D32878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf */,
 				DF8D0D7C284E8C9700355702 /* Preview Content */,
 			);
 			path = "POC-ARswiftui";
@@ -213,9 +216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFA808D52878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf in Resources */,
+				DFA808D62878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */,
 				DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */,
 				DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */,
-				DFABBBED28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
