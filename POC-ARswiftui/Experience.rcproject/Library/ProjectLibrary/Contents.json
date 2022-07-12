@@ -148,5 +148,100 @@
     "libraryIdentifier" : "ed8a57a9289afe0d07af9c09333d4460",
     "format" : "model",
     "displayName" : "Energia.usdz"
+  },
+  {
+    "libraryIdentifier" : "b80ed1204a2a00b0afda58cfe41f0cbf",
+    "format" : "model",
+    "displayName" : "Cristal.usdz"
+  },
+  {
+    "libraryIdentifier" : "d20bb6a8e665c951b9da145ed23e0c97",
+    "format" : "model",
+    "displayName" : "Obsidiana.usdz"
+  },
+  {
+    "libraryIdentifier" : "1c842f17ca1dfa40ab24d046aaeb72cf",
+    "format" : "model",
+    "displayName" : "lua.usdz"
+  },
+  {
+    "libraryIdentifier" : "362a99573aa1a40aa6b5b57043a3dfea",
+    "format" : "model",
+    "displayName" : "aço.usdz"
+  },
+  {
+    "libraryIdentifier" : "fa6ee2203fe5d8515928e4a352815260",
+    "format" : "model",
+    "displayName" : "Arcoiris.usdz"
+  },
+  {
+    "libraryIdentifier" : "b20c9470ffc007f96912cc9e5c72869c",
+    "format" : "model",
+    "displayName" : "Areia.usdz"
+  },
+  {
+    "libraryIdentifier" : "c7e43ef9995e246ef302b06c22d352ba",
+    "format" : "model",
+    "displayName" : "arenito.usdz"
+  },
+  {
+    "libraryIdentifier" : "7022fc993513d56eeaabe309cfae5b68",
+    "format" : "model",
+    "displayName" : "argila.usdz"
+  },
+  {
+    "libraryIdentifier" : "0e9b63ed069fa2e68f3f81efc02cb1d4",
+    "format" : "model",
+    "displayName" : "carvao.usdz"
+  },
+  {
+    "libraryIdentifier" : "1d7da2e673b5b63ef898e466badacb6a",
+    "format" : "model",
+    "displayName" : "Cimento.usdz"
+  },
+  {
+    "libraryIdentifier" : "c3047e9ec964a0d4722effb7dddac051",
+    "format" : "model",
+    "displayName" : "Esmeralda.usdz"
+  },
+  {
+    "libraryIdentifier" : "7481100b19054379321180055a927efa",
+    "format" : "model",
+    "displayName" : "Rubi.usdz"
+  },
+  {
+    "libraryIdentifier" : "18c5353b5f3bcf55d9a6fb5b6cff388f",
+    "format" : "model",
+    "displayName" : "Safira.usdz"
+  },
+  {
+    "libraryIdentifier" : "d006f6957008eaea8dfc4fef5be1a57d",
+    "format" : "model",
+    "displayName" : "gelo.usdz"
+  },
+  {
+    "libraryIdentifier" : "797dbcf6047d21558dfdff0362203258",
+    "format" : "model",
+    "displayName" : "Neve.usdz"
+  },
+  {
+    "libraryIdentifier" : "17f4a2db12a386e5b3d3451b7af57995",
+    "format" : "model",
+    "displayName" : "Papel.usdz"
+  },
+  {
+    "libraryIdentifier" : "e06c42ea1498b4f719b1394bc96ff878",
+    "format" : "model",
+    "displayName" : "Petroleo.usdz"
+  },
+  {
+    "libraryIdentifier" : "cbaa45771a7f29a4a608ff54e25f2b1e",
+    "format" : "model",
+    "displayName" : "PlanetaTerra.usdz"
+  },
+  {
+    "libraryIdentifier" : "3a532b03b1679c4d8dd122b6b2a9d536",
+    "format" : "model",
+    "displayName" : "Terra.usdz"
   }
 ]

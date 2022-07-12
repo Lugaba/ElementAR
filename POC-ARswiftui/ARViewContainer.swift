@@ -26,7 +26,7 @@ struct ARViewContainer: UIViewRepresentable {
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
         var imageNames: [String] = ["Agua", "Ar", "Fogo", "Terra"]
-        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArAgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "AguaLava": "Pedra"]
+        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArAgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "ArLava": "Pedra", "EnergiaPedra": "Cristal", "AguaLava": "Obsidiana", "ArPedra": "Lua", "CarvaoMetal": "Aco", "ChuvaSol": "Arcoiris", "AguaPedra": "Areia", "AreiaPedra": "Arenito", "AreiaAgua": "Argila", "ArvoreFogo": "Carvao", "CristalTerra": "Esmeralda", "CristalFogo": "Rubi", "AguaCristal": "Safira", "AguaVidro": "Gelo", "ArGelo": "Neve", "LaminaMadeira": "Papel", "AguaCarvao": "Petroleo", "AguaLua": "PlanetaTerra"]
         var isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
         var numberDiscovered: Int = UserDefaults.standard.integer(forKey: "numberDiscovered")
         
@@ -72,10 +72,11 @@ struct ARViewContainer: UIViewRepresentable {
                     }
                     
                     entidadesDict[imageName] = entity
+                    print(imageName, cartaObjeto)
                     if let  scene = scene {
                         if let obj = scene.findEntity(named: cartaObjeto) {
                             let objClone = obj.clone(recursive: true)
-                            
+                            print(objClone)
                             objClone.position.x = 0
                             objClone.position.y = 0.015
                             objClone.position.z = 0
