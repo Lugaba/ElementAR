@@ -47,9 +47,6 @@
       "filename" : "Lava.arreferenceimage"
     },
     {
-      "filename" : "Lua.arreferenceimage"
-    },
-    {
       "filename" : "Madeira.arreferenceimage"
     },
     {
@@ -63,6 +60,9 @@
     },
     {
       "filename" : "Polvora.arreferenceimage"
+    },
+    {
+      "filename" : "SateliteLua.arreferenceimage"
     },
     {
       "filename" : "Semente.arreferenceimage"

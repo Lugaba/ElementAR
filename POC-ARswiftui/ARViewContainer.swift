@@ -26,7 +26,7 @@ struct ARViewContainer: UIViewRepresentable {
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
         var imageNames: [String] = ["Agua", "Ar", "Fogo", "Terra"]
-        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArAgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "ArLava": "Pedra", "EnergiaPedra": "Cristal", "AguaLava": "Obsidiana", "ArPedra": "Lua", "CarvaoMetal": "Aco", "ChuvaSol": "Arcoiris", "AguaPedra": "Areia", "AreiaPedra": "Arenito", "AreiaAgua": "Argila", "ArvoreFogo": "Carvao", "CristalTerra": "Esmeralda", "CristalFogo": "Rubi", "AguaCristal": "Safira", "AguaVidro": "Gelo", "ArGelo": "Neve", "LaminaMadeira": "Papel", "AguaCarvao": "Petroleo", "AguaLua": "PlanetaTerra"]
+        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArAgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "ArLava": "Pedra", "EnergiaPedra": "Cristal", "AguaLava": "Obsidiana", "ArPedra": "SateliteLua", "CarvaoMetal": "Aco", "ChuvaSol": "Arcoiris", "AguaPedra": "Areia", "AreiaPedra": "Arenito", "AreiaAgua": "Argila", "ArvoreFogo": "Carvao", "CristalTerra": "Esmeralda", "CristalFogo": "Rubi", "AguaCristal": "Safira", "AguaVidro": "Gelo", "ArGelo": "Neve", "LaminaMadeira": "Papel", "AguaCarvao": "Petroleo", "AguaSateliteLua": "PlanetaTerra"]
         var isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
         var numberDiscovered: Int = UserDefaults.standard.integer(forKey: "numberDiscovered")
         
