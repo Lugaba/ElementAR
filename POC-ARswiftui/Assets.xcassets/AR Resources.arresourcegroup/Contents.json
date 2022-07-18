@@ -5,76 +5,76 @@
   },
   "resources" : [
     {
-      "filename" : "Agua.arreferenceimage"
+      "filename" : "Air.arreferenceimage"
     },
     {
-      "filename" : "Ar.arreferenceimage"
+      "filename" : "Blade.arreferenceimage"
     },
     {
-      "filename" : "Areia.arreferenceimage"
+      "filename" : "Clay.arreferenceimage"
     },
     {
-      "filename" : "Argila.arreferenceimage"
+      "filename" : "Coal.arreferenceimage"
     },
     {
-      "filename" : "Arvore.arreferenceimage"
+      "filename" : "Crystal.arreferenceimage"
     },
     {
-      "filename" : "Carvao.arreferenceimage"
+      "filename" : "Dirt.arreferenceimage"
     },
     {
-      "filename" : "Chuva.arreferenceimage"
+      "filename" : "Dust.arreferenceimage"
     },
     {
-      "filename" : "Cristal.arreferenceimage"
+      "filename" : "Energy.arreferenceimage"
     },
     {
-      "filename" : "Energia.arreferenceimage"
+      "filename" : "Fire.arreferenceimage"
     },
     {
-      "filename" : "Fogo.arreferenceimage"
+      "filename" : "Glass.arreferenceimage"
     },
     {
-      "filename" : "Gelo.arreferenceimage"
+      "filename" : "Grass.arreferenceimage"
     },
     {
-      "filename" : "Grama.arreferenceimage"
+      "filename" : "Gunpowder.arreferenceimage"
     },
     {
-      "filename" : "Lamina.arreferenceimage"
+      "filename" : "Ice.arreferenceimage"
     },
     {
       "filename" : "Lava.arreferenceimage"
     },
     {
-      "filename" : "Madeira.arreferenceimage"
-    },
-    {
       "filename" : "Metal.arreferenceimage"
     },
     {
-      "filename" : "Pedra.arreferenceimage"
+      "filename" : "Moon.arreferenceimage"
     },
     {
-      "filename" : "Poeira.arreferenceimage"
+      "filename" : "Rain.arreferenceimage"
     },
     {
-      "filename" : "Polvora.arreferenceimage"
+      "filename" : "Sand.arreferenceimage"
     },
     {
-      "filename" : "SateliteLua.arreferenceimage"
+      "filename" : "Seed.arreferenceimage"
     },
     {
-      "filename" : "Semente.arreferenceimage"
+      "filename" : "Stone.arreferenceimage"
     },
     {
-      "filename" : "Sol.arreferenceimage"
+      "filename" : "Sun.arreferenceimage"
     },
     {
-      "filename" : "Terra.arreferenceimage"
+      "filename" : "Tree.arreferenceimage"
     },
     {
-      "filename" : "Vidro.arreferenceimage"
+      "filename" : "Water.arreferenceimage"
+    },
+    {
+      "filename" : "Wood.arreferenceimage"
     }
   ]
 }

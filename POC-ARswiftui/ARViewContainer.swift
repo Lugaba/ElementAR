@@ -25,8 +25,8 @@ struct ARViewContainer: UIViewRepresentable {
         var mixing = false
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
-        var imageNames: [String] = ["Agua", "Ar", "Fogo", "Terra"]
-        var dictMixs:[String:String] = ["ArTerra": "Poeira", "ArAgua": "Chuva", "ArFogo": "Energia", "FogoTerra": "Lava", "AguaTerra": "Lama", "AguaFogo": "Vapor", "ArLava": "Pedra", "EnergiaPedra": "Cristal", "AguaLava": "Obsidiana", "ArPedra": "SateliteLua", "CarvaoMetal": "Aco", "ChuvaSol": "Arcoiris", "AguaPedra": "Areia", "AreiaPedra": "Arenito", "AreiaAgua": "Argila", "ArvoreFogo": "Carvao", "CristalTerra": "Esmeralda", "CristalFogo": "Rubi", "AguaCristal": "Safira", "AguaVidro": "Gelo", "ArGelo": "Neve", "LaminaMadeira": "Papel", "AguaCarvao": "Petroleo", "AguaSateliteLua": "PlanetaTerra"]
+        var imageNames: [String] = ["Water", "Air", "Fire", "Dirt"]
+        var dictMixs:[String:String] = ["AirDirt": "Dust", "AirWater": "Rain", "AirFire": "Energy", "DirtFire": "Lava", "DirtWater": "Mud", "FireWater": "Steam", "AirLava": "Stone", "EnergyStone": "Crystal", "LavaWater": "Obsidian", "AirStone": "Moon", "CoalMetal": "Steel", "RainSun": "Rainbow", "StoneWater": "Sand", "SandStone": "Sandstone", "SandWater": "Clay", "FireTree": "Coal", "DirtCystal": "Emerald", "CrystalFire": "Ruby", "CrystalWater": "Sapphire", "GlassWater": "Ice", "AirIce": "Snow", "BladeWood": "Paper", "CoalWater": "Petroleum", "MoonWater": "Earth"]
         var isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
         var numberDiscovered: Int = UserDefaults.standard.integer(forKey: "numberDiscovered")
         

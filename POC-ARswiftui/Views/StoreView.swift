@@ -15,7 +15,7 @@ struct StoreView: View {
     var body: some View {
         VStack(spacing: 0) {
             ScrollView {
-                Text("⚠️ Você precisa de uma impressora ⚠️")
+                Text("⚠️ You need a printer ⚠️")
                     .foregroundColor(.white)
                     .padding()
                     .background(.yellow.opacity(0.8))

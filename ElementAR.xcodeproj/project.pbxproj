@@ -27,6 +27,7 @@
 		DFA808D62878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFA808D42878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */; };
 		DFDD9BF52867449B0060B097 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDD9BF42867449B0060B097 /* StoreKit.framework */; };
 		DFDD9BF8286744D00060B097 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDD9BF7286744D00060B097 /* StoreManager.swift */; };
+		DFEA8E7A2885C15100C5A277 /* LocalizablePT.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFEA8E7C2885C15100C5A277 /* LocalizablePT.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DFA808D42878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.ElementarDeck.pdf; sourceTree = "<group>"; };
 		DFDD9BF42867449B0060B097 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DFDD9BF7286744D00060B097 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		DFEA8E7B2885C15100C5A277 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LocalizablePT.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		DF8D0D73284E8C9500355702 /* POC-ARswiftui */ = {
 			isa = PBXGroup;
 			children = (
+				DFEA8E772885C12A00C5A277 /* Localization */,
 				DFDD9BF6286744BD0060B097 /* in-appPurchase */,
 				C830325F28510A5000683C6F /* Utils */,
 				C830325E28510A3000683C6F /* Structs */,
@@ -156,6 +159,14 @@
 				DFDD9BF7286744D00060B097 /* StoreManager.swift */,
 			);
 			path = "in-appPurchase";
+			sourceTree = "<group>";
+		};
+		DFEA8E772885C12A00C5A277 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DFEA8E7C2885C15100C5A277 /* LocalizablePT.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = DF8D0D68284E8C9500355702;
 			productRefGroup = DF8D0D72284E8C9500355702 /* Products */;
@@ -216,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEA8E7A2885C15100C5A277 /* LocalizablePT.strings in Resources */,
 				DFA808D52878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf in Resources */,
 				DFA808D62878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */,
 				DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */,
@@ -249,6 +262,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DFEA8E7C2885C15100C5A277 /* LocalizablePT.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFEA8E7B2885C15100C5A277 /* pt-BR */,
+			);
+			name = LocalizablePT.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DF8D0D7F284E8C9700355702 /* Debug */ = {

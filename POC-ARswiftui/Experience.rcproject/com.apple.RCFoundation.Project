@@ -306,7 +306,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Areia"
+                            "value" : "Sand"
                           }
                         ]
                       ]
@@ -622,7 +622,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Petroleo"
+                            "value" : "Petroleum"
                           }
                         ]
                       ]
@@ -933,7 +933,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "SateliteLua"
+                            "value" : "Moon"
                           }
                         ]
                       ]
@@ -1487,7 +1487,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Fogo"
+                            "value" : "Fire"
                           }
                         ]
                       ]
@@ -1796,7 +1796,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Argila"
+                            "value" : "Clay"
                           }
                         ]
                       ]
@@ -2072,7 +2072,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Chuva"
+                            "value" : "Rain"
                           }
                         ]
                       ]
@@ -2382,7 +2382,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Safira"
+                            "value" : "Sapphire"
                           }
                         ]
                       ]
@@ -2693,7 +2693,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Papel"
+                            "value" : "Paper"
                           }
                         ]
                       ]
@@ -2714,6 +2714,321 @@
                         0,
                         -1,
                         0.024999998509883881,
+                        7.4505805969238281e-09,
+                        1
+                      ]
+                    }
+                  },
+                  "87CE678E-14D2-4315-A5B5-515882AD6192" : {
+                    "overrides" : {
+                      "children" : {
+                        "CE0EB42A-0189-43C3-9694-2FC793DD941D" : {
+                          "overrides" : {
+                            "children" : {
+                              "USDScene" : {
+                                "overrides" : {
+                                  "arguments" : [
+                                    [
+                                      "includeSceneScaling",
+                                      {
+                                        "typeName" : "Bool",
+                                        "value" : false
+                                      }
+                                    ],
+                                    [
+                                      "subpath",
+                                      {
+                                        "typeName" : "String",
+                                        "value" : ""
+                                      }
+                                    ],
+                                    [
+                                      "url",
+                                      {
+                                        "typeName" : "String",
+                                        "value" : "model:d20bb6a8e665c951b9da145ed23e0c97\/Obsidiana.usdz"
+                                      }
+                                    ],
+                                    [
+                                      "withDescendants",
+                                      {
+                                        "typeName" : "Bool",
+                                        "value" : true
+                                      }
+                                    ]
+                                  ],
+                                  "factory" : {
+                                    "identifier" : "com.apple.af.FileImportAssetFactory",
+                                    "version" : "0.0"
+                                  },
+                                  "runtimeAttributes" : [
+                                    [
+                                      "RuntimeIdentifier",
+                                      {
+                                        "typeName" : "UUID",
+                                        "value" : "200D4779-55F0-430F-A01C-69A3BCC68FD6"
+                                      }
+                                    ]
+                                  ]
+                                },
+                                "transform" : {
+                                  "matrix" : [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                  ]
+                                }
+                              }
+                            },
+                            "factory" : {
+                              "identifier" : "com.apple.af.Group",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "9863FF71-9233-45ED-86A4-ABBD75798CB8"
+                                }
+                              ],
+                              [
+                                "entityName",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "Obsi"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              0.019999997690320015,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.019999997690320015,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.019999997690320015,
+                              0,
+                              0,
+                              0.019999997690320015,
+                              -7.4505797087454084e-09,
+                              0.99999994039535522
+                            ]
+                          }
+                        },
+                        "F274D7FE-8FB3-438F-86F2-0E967F88572D" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "boundHeight",
+                                {
+                                  "typeName" : "Double",
+                                  "value" : 1.5
+                                }
+                              ],
+                              [
+                                "boundWidth",
+                                {
+                                  "typeName" : "Double",
+                                  "value" : 6
+                                }
+                              ],
+                              [
+                                "depth",
+                                {
+                                  "typeName" : "Double",
+                                  "value" : 0.29999999999999999
+                                }
+                              ],
+                              [
+                                "font",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "SFProRounded-Regular"
+                                }
+                              ],
+                              [
+                                "hasBackground",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "height",
+                                {
+                                  "typeName" : "Double",
+                                  "value" : 0.0077430907150667248
+                                }
+                              ],
+                              [
+                                "horizontalAlignment",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "center"
+                                }
+                              ],
+                              [
+                                "material",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "standard"
+                                }
+                              ],
+                              [
+                                "materialColor",
+                                {
+                                  "typeName" : "double4",
+                                  "value" : [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ]
+                                }
+                              ],
+                              [
+                                "oneLine",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "precision",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "normal"
+                                }
+                              ],
+                              [
+                                "text",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "Obsidian"
+                                }
+                              ],
+                              [
+                                "verticalAlignment",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "bottom"
+                                }
+                              ],
+                              [
+                                "verticalPosition",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "middle"
+                                }
+                              ],
+                              [
+                                "wordWrap",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.rc.af.CoreAssetFactories.Text",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "401E3D16-101E-490A-98A1-44068BE0B24A"
+                                }
+                              ],
+                              [
+                                "entityName",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "Crystal"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              0.99999994039535522,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.99999994039535522,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.99999994039535522,
+                              0,
+                              5.9604644775390625e-08,
+                              0.049999929964542389,
+                              -9.3132390688310807e-10,
+                              0.99999994039535522
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "3BB508F2-BD69-48C8-95D6-411F49DA3545"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "Obsidian"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -0.34999999403953552,
+                        0.025000002235174179,
                         7.4505805969238281e-09,
                         1
                       ]
@@ -2964,7 +3279,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Ar"
+                            "value" : "Air"
                           }
                         ]
                       ]
@@ -3277,7 +3592,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Esmeralda"
+                            "value" : "Emerald"
                           }
                         ]
                       ]
@@ -3553,7 +3868,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Pedra"
+                            "value" : "Stone"
                           }
                         ]
                       ]
@@ -3870,7 +4185,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Lama"
+                            "value" : "Mud"
                           }
                         ]
                       ]
@@ -4181,7 +4496,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Rubi"
+                            "value" : "Ruby"
                           }
                         ]
                       ]
@@ -4492,7 +4807,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "PlanetaTerra"
+                            "value" : "Earth"
                           }
                         ]
                       ]
@@ -5027,7 +5342,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Energia"
+                            "value" : "Energy"
                           }
                         ]
                       ]
@@ -5341,7 +5656,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Gelo"
+                            "value" : "Ice"
                           }
                         ]
                       ]
@@ -5617,7 +5932,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Poeira"
+                            "value" : "Dust"
                           }
                         ]
                       ]
@@ -5928,7 +6243,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Neve"
+                            "value" : "Snow"
                           }
                         ]
                       ]
@@ -6244,7 +6559,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Agua"
+                            "value" : "Water"
                           }
                         ]
                       ]
@@ -6554,7 +6869,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Arcoiris"
+                            "value" : "Rainbow"
                           }
                         ]
                       ]
@@ -6863,7 +7178,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Cristal"
+                            "value" : "Crystal"
                           }
                         ]
                       ]
@@ -7171,7 +7486,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Terra"
+                            "value" : "Dirt"
                           }
                         ]
                       ]
@@ -7481,7 +7796,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Aco"
+                            "value" : "Steel"
                           }
                         ]
                       ]
@@ -7789,7 +8104,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Cimento"
+                            "value" : "Cement"
                           }
                         ]
                       ]
@@ -8032,112 +8347,7 @@
                       ]
                     }
                   },
-                  "CE0EB42A-0189-43C3-9694-2FC793DD941D" : {
-                    "overrides" : {
-                      "children" : {
-                        "USDScene" : {
-                          "overrides" : {
-                            "arguments" : [
-                              [
-                                "includeSceneScaling",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : false
-                                }
-                              ],
-                              [
-                                "subpath",
-                                {
-                                  "typeName" : "String",
-                                  "value" : ""
-                                }
-                              ],
-                              [
-                                "url",
-                                {
-                                  "typeName" : "String",
-                                  "value" : "model:d20bb6a8e665c951b9da145ed23e0c97\/Obsidiana.usdz"
-                                }
-                              ],
-                              [
-                                "withDescendants",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : true
-                                }
-                              ]
-                            ],
-                            "factory" : {
-                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                              "version" : "0.0"
-                            },
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "200D4779-55F0-430F-A01C-69A3BCC68FD6"
-                                }
-                              ]
-                            ]
-                          },
-                          "transform" : {
-                            "matrix" : [
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.af.Group",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "9863FF71-9233-45ED-86A4-ABBD75798CB8"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        0.019999999552965164,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.019999999552965164,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.019999999552965164,
-                        0,
-                        -0.34999999403953552,
-                        0.045000001788139343,
-                        4.4408920985006262e-16,
-                        1
-                      ]
-                    }
-                  },
+                  "CE0EB42A-0189-43C3-9694-2FC793DD941D" : null,
                   "D6D7D410-D7B0-440E-81A0-089F94D6B2DC" : null,
                   "D40C61E5-B352-4671-93D7-E996C19537E5" : {
                     "overrides" : {
@@ -8382,7 +8592,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Vapor"
+                            "value" : "Steam"
                           }
                         ]
                       ]
@@ -8690,7 +8900,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Arenito"
+                            "value" : "Sandstone"
                           }
                         ]
                       ]
@@ -8999,7 +9209,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "Carvao"
+                            "value" : "Coal"
                           }
                         ]
                       ]
@@ -9041,162 +9251,7 @@
                   "F7B73E2D-AAF1-4DCA-8CB0-4F7F45814851" : null,
                   "F8FD0C38-D898-4467-9D72-C0703915D503" : null,
                   "F257DB4D-67A0-4B5A-9353-627221B15659" : null,
-                  "F274D7FE-8FB3-438F-86F2-0E967F88572D" : {
-                    "overrides" : {
-                      "arguments" : [
-                        [
-                          "boundHeight",
-                          {
-                            "typeName" : "Double",
-                            "value" : 1.5
-                          }
-                        ],
-                        [
-                          "boundWidth",
-                          {
-                            "typeName" : "Double",
-                            "value" : 6
-                          }
-                        ],
-                        [
-                          "depth",
-                          {
-                            "typeName" : "Double",
-                            "value" : 0.29999999999999999
-                          }
-                        ],
-                        [
-                          "font",
-                          {
-                            "typeName" : "String",
-                            "value" : "SFProRounded-Regular"
-                          }
-                        ],
-                        [
-                          "hasBackground",
-                          {
-                            "typeName" : "Bool",
-                            "value" : false
-                          }
-                        ],
-                        [
-                          "height",
-                          {
-                            "typeName" : "Double",
-                            "value" : 0.0077430907150667248
-                          }
-                        ],
-                        [
-                          "horizontalAlignment",
-                          {
-                            "typeName" : "String",
-                            "value" : "center"
-                          }
-                        ],
-                        [
-                          "material",
-                          {
-                            "typeName" : "String",
-                            "value" : "standard"
-                          }
-                        ],
-                        [
-                          "materialColor",
-                          {
-                            "typeName" : "double4",
-                            "value" : [
-                              1,
-                              1,
-                              1,
-                              1
-                            ]
-                          }
-                        ],
-                        [
-                          "oneLine",
-                          {
-                            "typeName" : "Bool",
-                            "value" : false
-                          }
-                        ],
-                        [
-                          "precision",
-                          {
-                            "typeName" : "String",
-                            "value" : "normal"
-                          }
-                        ],
-                        [
-                          "text",
-                          {
-                            "typeName" : "String",
-                            "value" : "Obsidian"
-                          }
-                        ],
-                        [
-                          "verticalAlignment",
-                          {
-                            "typeName" : "String",
-                            "value" : "bottom"
-                          }
-                        ],
-                        [
-                          "verticalPosition",
-                          {
-                            "typeName" : "String",
-                            "value" : "middle"
-                          }
-                        ],
-                        [
-                          "wordWrap",
-                          {
-                            "typeName" : "Bool",
-                            "value" : true
-                          }
-                        ]
-                      ],
-                      "factory" : {
-                        "identifier" : "com.apple.rc.af.CoreAssetFactories.Text",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "401E3D16-101E-490A-98A1-44068BE0B24A"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "Crystal"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        -0.34999993443489075,
-                        0.074999935925006866,
-                        6.5192566900407201e-09,
-                        1
-                      ]
-                    }
-                  },
+                  "F274D7FE-8FB3-438F-86F2-0E967F88572D" : null,
                   "F1830CB8-F158-429B-9BD0-E4C34F09FC29" : null,
                   "F8301EB8-DCCC-4383-8B0A-9AA71E2FA88A" : null,
                   "F16174C2-6D06-4A25-B612-5FA277C5E898" : null,
@@ -9222,21 +9277,21 @@
               "title" : "Elements",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.98864179849624634,
+                  0.98578333854675293,
                   -6.5192580223083496e-08,
-                  0.15029069781303406,
+                  0.16802111268043518,
                   0,
-                  0.020546430721879005,
+                  0.022970367223024368,
                   0.99061095714569092,
-                  -0.13515785336494446,
+                  -0.1347670704126358,
                   0,
-                  -0.14887954294681549,
+                  -0.16644349694252014,
                   0.13671068847179413,
-                  0.97935944795608521,
+                  0.9765278697013855,
                   0,
-                  -0.93619722127914429,
-                  0.13158729672431946,
-                  0.38212257623672485,
+                  0.1903344988822937,
+                  0.066778339445590973,
+                  0.21361500024795532,
                   1
                 ],
                 "sceneTransform" : [

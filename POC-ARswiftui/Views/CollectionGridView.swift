@@ -9,32 +9,31 @@ import SwiftUI
 
 struct CollectionGridView: View {
     @Binding var openConquistas: Bool
-    let elements: [CellContent] = [CellContent(color: Color.redElementar, name: "Fogo", icon: Image("fireIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Agua", icon: Image("waterIcon")),
-                                   CellContent(color: Color.yellowElementar, name: "Ar", icon: Image("airIcon")),
-                                   CellContent(color: Color.greenElementar, name: "Terra", icon: Image("earthIcon")),
+    let elements: [CellContent] = [CellContent(color: Color.redElementar, name: "Fire", icon: Image("fireIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Water", icon: Image("waterIcon")),
+                                   CellContent(color: Color.yellowElementar, name: "Air", icon: Image("airIcon")),
+                                   CellContent(color: Color.greenElementar, name: "Dirt", icon: Image("earthIcon")),
                                    CellContent(color: Color.redElementar, name: "Lava", icon: Image("lavaIcon")),
-                                   CellContent(color: Color.yellowElementar, name: "Poeira", icon: Image("dustIcon")),
-                                   CellContent(color: Color.greenElementar, name: "Lama", icon: Image("mudIcon")),
-                                   CellContent(color: Color.yellowElementar, name: "Energia", icon: Image("energyIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Chuva", icon: Image("rainIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Vapor", icon: Image("vaporIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Pedra", icon: Image("lavaIcon")),
-                                   CellContent(color: Color.redElementar, name: "Pólvora", icon: Image("fireIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Obisidiana", icon: Image("waterIcon")),
-                                   CellContent(color: Color.yellowElementar, name: "Furacão", icon: Image("airIcon")),
-                                   CellContent(color: Color.greenElementar, name: "Semente", icon: Image("earthIcon")),
-                                   CellContent(color: Color.redElementar, name: "Sol", icon: Image("lavaIcon")),
-                                   CellContent(color: Color.yellowElementar, name: "Lua", icon: Image("dustIcon")),
-                                   CellContent(color: Color.greenElementar, name: "Cristal", icon: Image("mudIcon")),
-                                   CellContent(color: Color.yellowElementar, name: "Areia", icon: Image("energyIcon")),
+                                   CellContent(color: Color.yellowElementar, name: "Dust", icon: Image("dustIcon")),
+                                   CellContent(color: Color.greenElementar, name: "Mud", icon: Image("mudIcon")),
+                                   CellContent(color: Color.yellowElementar, name: "Energy", icon: Image("energyIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Rain", icon: Image("rainIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Steam", icon: Image("vaporIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Stone", icon: Image("lavaIcon")),
+                                   CellContent(color: Color.redElementar, name: "Gunpowder", icon: Image("fireIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Obsidian", icon: Image("waterIcon")),
+                                   CellContent(color: Color.greenElementar, name: "Seed", icon: Image("earthIcon")),
+                                   CellContent(color: Color.redElementar, name: "Sun", icon: Image("lavaIcon")),
+                                   CellContent(color: Color.yellowElementar, name: "Moon", icon: Image("dustIcon")),
+                                   CellContent(color: Color.greenElementar, name: "Crystal", icon: Image("mudIcon")),
+                                   CellContent(color: Color.yellowElementar, name: "Sand", icon: Image("energyIcon")),
                                    CellContent(color: Color.blueElementar, name: "Metal", icon: Image("rainIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Arco-Iris", icon: Image("vaporIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Grama", icon: Image("lavaIcon")),
-                                   CellContent(color: Color.redElementar, name: "Safira", icon: Image("fireIcon")),
-                                   CellContent(color: Color.redElementar, name: "Esmeralda", icon: Image("fireIcon")),
-                                   CellContent(color: Color.redElementar, name: "PlanetaTerra", icon: Image("fireIcon")),
-                                   CellContent(color: Color.blueElementar, name: "Rubi", icon: Image("lavaIcon"))
+                                   CellContent(color: Color.blueElementar, name: "Rainbow", icon: Image("vaporIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Seed", icon: Image("lavaIcon")),
+                                   CellContent(color: Color.redElementar, name: "Sapphire", icon: Image("fireIcon")),
+                                   CellContent(color: Color.redElementar, name: "Emerald", icon: Image("fireIcon")),
+                                   CellContent(color: Color.redElementar, name: "Earth", icon: Image("fireIcon")),
+                                   CellContent(color: Color.blueElementar, name: "Ruby", icon: Image("lavaIcon"))
 
     ]
     let columns = [
@@ -51,7 +50,7 @@ struct CollectionGridView: View {
             VStack(spacing: 0) {
                 HStack {
                     Spacer()
-                    Text("Conquistas")
+                    Text("Achievements")
                         .padding(.top)
                         .font(.system(.largeTitle, design: .rounded))
                         .foregroundColor(.white)

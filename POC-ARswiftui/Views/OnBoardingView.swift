@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnBoardingView: View {
     let images = ["printer.fill", "camera.on.rectangle.fill", "leaf.fill"]
-    let texts = ["1. Imprima as cartas", "2. Aponte a câmera para duas cartas", "3. Descubra novos elementos"]
+    let texts = [LocalizedStringKey("1. Print the cards"), LocalizedStringKey("2. Aim the camera at two cards"), LocalizedStringKey("3. Discover new elements")]
     let colors = [Color.redElementar, Color.blueElementar, Color.greenElementar]
     
     init() {
@@ -23,7 +23,7 @@ struct OnBoardingView: View {
         NavigationView {
             VStack(alignment: .center, spacing: 24) {
                 VStack {
-                    Text("Bem vindo ao")
+                    Text(LocalizedStringKey("Welcome to"))
                         .foregroundColor(.white)
                         .font(.system(.title3, design: .rounded))
                     Text("Elementar")
@@ -47,7 +47,7 @@ struct OnBoardingView: View {
                 }
                 Spacer()
                 NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true).navigationBarHidden(true)) {
-                    Text("Continuar")
+                    Text(LocalizedStringKey("Continue"))
                         .padding(16)
                         .padding(.leading, 32)
                         .padding(.trailing, 32)
