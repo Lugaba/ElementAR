@@ -25,6 +25,7 @@ struct ARViewContainer: UIViewRepresentable {
         var mixing = false
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
+        var free = ["Water", "Air", "Fire", "Dirt"]
         var imageNames: [String] = ["Water", "Air", "Fire", "Dirt"]
         var dictMixs:[String:String] = ["AirDirt": "Dust", "AirWater": "Rain", "AirFire": "Energy", "DirtFire": "Lava", "DirtWater": "Mud", "FireWater": "Steam", "DustFire": "Gunpowder","AirLava": "Stone", "LavaWater": "Obsidian", "DirtEnergy": "Seed", "EnergyFire": "Sun", "AirStone": "Moon", "EnergyStone": "Crystal", "StoneWater": "Sand", "FireStone": "Metal", "RainSun": "Rainbow", "DirtSeed": "Grass", "CrystalWater": "Sapphire", "CrystalDirt": "Emerald", "MoonWater": "Earth", "CrystalFire": "Ruby", "SandWater": "Clay", "FireSand": "Glass", "MetalWater": "Mercury", "MetalStone": "Blade", "GrassWater": "Tree", "MetalSun": "Gold", "SandStone": "Sandstone", "GunpowderMetal": "Bomb", "ClayFire": "Brick", "ClayStone": "Cement", "GlassWater": "Ice", "GlassMetal": "Mirror", "BladeTree": "Wood", "FireTree": "Coal", "AirIce": "Snow", "FireWood": "Smoke", "BladeWood": "Paper", "CoalMetal": "Steel", "CoalWater": "Petroleum"]
         var isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
@@ -55,14 +56,22 @@ struct ARViewContainer: UIViewRepresentable {
                     let entity = AnchorEntity(anchor: imageAnchor)
                     
                     entity.name = imageName
-                    if imageNames.contains(imageName) {
+                    if imageNames.contains(imageName){
                         if !UserDefaults.standard.bool(forKey: imageName) {
                             numberDiscovered += 1
                             UserDefaults.standard.set(numberDiscovered, forKey: "numberDiscovered")
                         }
                         UserDefaults.standard.set(true, forKey: imageName)
                         
-                        cartaObjeto = imageName
+                        if free.contains(imageName) {
+                            cartaObjeto = imageName
+                        } else {
+                            if isBought {
+                                cartaObjeto = imageName
+                            } else {
+                                cartaObjeto = "blocked"
+                            }
+                        }
                     } else {
                         if isBought {
                             cartaObjeto = "unknow"
