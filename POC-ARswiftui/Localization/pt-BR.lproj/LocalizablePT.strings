@@ -6,8 +6,60 @@
   
 */
 
+// Onboarding
 "1. Print the cards" = "1. Imprima as cartas";
 "2. Aim the camera at two cards" = "2. Aponte a câmera para duas cartas";
 "3. Discover new elements" = "3. Descubra novos elementos";
 "Welcome to" = "Bem-vindo ao";
 "Continue" = "Continuar";
+
+// StoreView
+"⚠️ You need a printer ⚠️" = "⚠️ Você precisa de uma impressora ⚠️";
+"Store" = "Loja";
+"Restore Purchases" = "Restaurar compras";
+"Open" = "Abrir";
+
+// GridView
+"Achievements" = "Conquistas";
+"Dirt" = "Terra";
+"Water" = "Água";
+"Air" = "Ar";
+"Fire" = "Fogo";
+"Dust" = "Poeira";
+"Mud" = "Lama";
+"Energy" = "Energia";
+"Rain" = "Chuva";
+"Steam" = "Vapor";
+"Gunpowder" = "Pólvora";
+"Stone" = "Pedra";
+"Obsidian" = "Obsidiana";
+"Seed" = "Semente";
+"Sun" = "Sol";
+"Moon" = "Lua";
+"Crystal" = "Cristal";
+"Sand" = "Areia";
+"Rainbow" = "Arco-Íris";
+"Grass" = "Grama";
+"Sapphire" = "Sáfira";
+"Emerald" = "Esmeralda";
+"Earth" = "Planeta";
+"Ruby" = "Rubi";
+"Clay" = "Argila";
+"Glass" = "Vidro";
+"Mercury" = "Mercúrio";
+"Blade" = "Lâmina";
+"Tree" = "Árvore";
+"Gold" = "Ouro";
+"Sandstone" = "Arenito";
+"Bomb" = "Bomba";
+"Brick" = "Tijolo";
+"Cement" = "Cimento";
+"Ice" = "Gelo";
+"Mirror" = "Espelho";
+"Wood" = "Madeira";
+"Coal" = "Carvão";
+"Snow" = "Neve";
+"Smoke" = "Fumaça";
+"Paper" = "Papel";
+"Steel" = "Aço";
+"Petroleum" = "Petróleo";

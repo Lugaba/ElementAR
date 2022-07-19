@@ -243,5 +243,50 @@
     "libraryIdentifier" : "3a532b03b1679c4d8dd122b6b2a9d536",
     "format" : "model",
     "displayName" : "Terra.usdz"
+  },
+  {
+    "libraryIdentifier" : "fae77458020d4b2cc8e5a145f88ab5d9",
+    "format" : "model",
+    "displayName" : "Bomba.usdz"
+  },
+  {
+    "libraryIdentifier" : "c8f1409316fb4e32ead9fa8816a0074a",
+    "format" : "model",
+    "displayName" : "Fire.usdz"
+  },
+  {
+    "libraryIdentifier" : "d3953d9212d77621fa59b453b589dffa",
+    "format" : "model",
+    "displayName" : "Smoke.usdz"
+  },
+  {
+    "libraryIdentifier" : "f733e02e92155cebf9b48d47267f0288",
+    "format" : "model",
+    "displayName" : "Madeira.usdz"
+  },
+  {
+    "libraryIdentifier" : "262d1c5de16e3aa9bc8b74f21ee863e0",
+    "format" : "model",
+    "displayName" : "Mercurio.usdz"
+  },
+  {
+    "libraryIdentifier" : "436f2ed124e523c73d6ec748873d72aa",
+    "format" : "model",
+    "displayName" : "Metal.usdz"
+  },
+  {
+    "libraryIdentifier" : "aba3a81cfc8924bb1b468739e73a5149",
+    "format" : "model",
+    "displayName" : "Ouro.usdz"
+  },
+  {
+    "libraryIdentifier" : "e4469abf1dbe8a0b4b356ae7e90a3bb3",
+    "format" : "model",
+    "displayName" : "Tijolo.usdz"
+  },
+  {
+    "libraryIdentifier" : "f929dca3239d3c9ec61d658ac8972cdc",
+    "format" : "model",
+    "displayName" : "Vapor.usdz"
   }
 ]

@@ -52,7 +52,7 @@ struct ItemStoreView: View {
                             Spacer()
                             if isBought {
                                 NavigationLink(destination: PDFUIView(name: pdfName)) {
-                                    Text("Abrir")
+                                    Text("Open")
                                         .padding(8)
                                         .foregroundColor(.white)
                                         .font(.system(.body, design: .rounded))

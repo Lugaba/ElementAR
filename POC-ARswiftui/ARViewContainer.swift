@@ -26,7 +26,7 @@ struct ARViewContainer: UIViewRepresentable {
         var entidadesDict:[String:AnchorEntity] = [String: AnchorEntity]()
         var anchorMixName: String = ""
         var imageNames: [String] = ["Water", "Air", "Fire", "Dirt"]
-        var dictMixs:[String:String] = ["AirDirt": "Dust", "AirWater": "Rain", "AirFire": "Energy", "DirtFire": "Lava", "DirtWater": "Mud", "FireWater": "Steam", "AirLava": "Stone", "EnergyStone": "Crystal", "LavaWater": "Obsidian", "AirStone": "Moon", "CoalMetal": "Steel", "RainSun": "Rainbow", "StoneWater": "Sand", "SandStone": "Sandstone", "SandWater": "Clay", "FireTree": "Coal", "DirtCystal": "Emerald", "CrystalFire": "Ruby", "CrystalWater": "Sapphire", "GlassWater": "Ice", "AirIce": "Snow", "BladeWood": "Paper", "CoalWater": "Petroleum", "MoonWater": "Earth"]
+        var dictMixs:[String:String] = ["AirDirt": "Dust", "AirWater": "Rain", "AirFire": "Energy", "DirtFire": "Lava", "DirtWater": "Mud", "FireWater": "Steam", "DustFire": "Gunpowder","AirLava": "Stone", "LavaWater": "Obsidian", "DirtEnergy": "Seed", "EnergyFire": "Sun", "AirStone": "Moon", "EnergyStone": "Crystal", "StoneWater": "Sand", "FireStone": "Metal", "RainSun": "Rainbow", "DirtSeed": "Grass", "CrystalWater": "Sapphire", "CrystalDirt": "Emerald", "MoonWater": "Earth", "CrystalFire": "Ruby", "SandWater": "Clay", "FireSand": "Glass", "MetalWater": "Mercury", "MetalStone": "Blade", "GrassWater": "Tree", "MetalSun": "Gold", "SandStone": "Sandstone", "GunpowderMetal": "Bomb", "ClayFire": "Brick", "ClayStone": "Cement", "GlassWater": "Ice", "GlassMetal": "Mirror", "BladeTree": "Wood", "FireTree": "Coal", "AirIce": "Snow", "FireWood": "Smoke", "BladeWood": "Paper", "CoalMetal": "Steel", "CoalWater": "Petroleum"]
         var isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
         var numberDiscovered: Int = UserDefaults.standard.integer(forKey: "numberDiscovered")
         
@@ -70,13 +70,11 @@ struct ARViewContainer: UIViewRepresentable {
                             cartaObjeto = "blocked"
                         }
                     }
-                    
+                    print(imageName)
                     entidadesDict[imageName] = entity
-                    print(imageName, cartaObjeto)
                     if let  scene = scene {
                         if let obj = scene.findEntity(named: cartaObjeto) {
                             let objClone = obj.clone(recursive: true)
-                            print(objClone)
                             objClone.position.x = 0
                             objClone.position.y = 0.015
                             objClone.position.z = 0
