@@ -79,7 +79,6 @@ struct ARViewContainer: UIViewRepresentable {
                             cartaObjeto = "blocked"
                         }
                     }
-                    print(imageName)
                     entidadesDict[imageName] = entity
                     if let  scene = scene {
                         if let obj = scene.findEntity(named: cartaObjeto) {

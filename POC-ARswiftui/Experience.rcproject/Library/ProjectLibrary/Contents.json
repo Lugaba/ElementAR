@@ -288,5 +288,15 @@
     "libraryIdentifier" : "f929dca3239d3c9ec61d658ac8972cdc",
     "format" : "model",
     "displayName" : "Vapor.usdz"
+  },
+  {
+    "libraryIdentifier" : "c86f544009a557d1e88679b7a31f624d",
+    "format" : "model",
+    "displayName" : "Sun.usdz"
+  },
+  {
+    "libraryIdentifier" : "5b77f3bfba181caa3cf678545d74ebbc",
+    "format" : "model",
+    "displayName" : "Seed.usdz"
   }
 ]
