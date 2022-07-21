@@ -97,7 +97,6 @@ struct ARViewContainer: UIViewRepresentable {
             }
         }
         
-        //Checks for tracking status
         func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
             for anchor in anchors {
                 if let anchorName = entidadesDict[anchor.name!], let removeMix = anchorName.findEntity(named: "blocked") {
@@ -122,6 +121,7 @@ struct ARViewContainer: UIViewRepresentable {
                     
                     var isDiscovered1: Bool = false
                     var isDiscovered2: Bool = false
+                    var havePermission: Bool = true
                     
                     let positionFirst = anchors[0].transform.columns.3
                     let positionSecond = anchors[1].transform.columns.3
@@ -133,13 +133,17 @@ struct ARViewContainer: UIViewRepresentable {
                         isDiscovered1 = UserDefaults.standard.bool(forKey: "\(nome1)")
                         isDiscovered2 = UserDefaults.standard.bool(forKey: "\(nome2)")
                         
+                        if !isBought && (!free.contains(nome1) || !free.contains(nome2)) {
+                            havePermission = false
+                        }
+                        
                         if letra1 < letra2 {
                             mixResult = nome1 + nome2
                         } else {
                             mixResult = nome2 + nome1
                         }
                     }
-                    if let scene = scene, isDiscovered1, isDiscovered2 {
+                    if let scene = scene, isDiscovered1, isDiscovered2, havePermission {
                         if let nameDict = dictMixs[mixResult] {
                             if !UserDefaults.standard.bool(forKey: nameDict) {
                                 numberDiscovered += 1
