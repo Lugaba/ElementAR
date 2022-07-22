@@ -5,31 +5,76 @@
   },
   "resources" : [
     {
-      "filename" : "Agua.arreferenceimage"
+      "filename" : "Air.arreferenceimage"
     },
     {
-      "filename" : "Ar.arreferenceimage"
+      "filename" : "Blade.arreferenceimage"
     },
     {
-      "filename" : "Chuva.arreferenceimage"
+      "filename" : "Clay.arreferenceimage"
     },
     {
-      "filename" : "Energia.arreferenceimage"
+      "filename" : "Coal.arreferenceimage"
     },
     {
-      "filename" : "Fogo.arreferenceimage"
+      "filename" : "Crystal.arreferenceimage"
+    },
+    {
+      "filename" : "Dirt.arreferenceimage"
+    },
+    {
+      "filename" : "Dust.arreferenceimage"
+    },
+    {
+      "filename" : "Energy.arreferenceimage"
+    },
+    {
+      "filename" : "Fire.arreferenceimage"
+    },
+    {
+      "filename" : "Glass.arreferenceimage"
+    },
+    {
+      "filename" : "Grass.arreferenceimage"
+    },
+    {
+      "filename" : "Gunpowder.arreferenceimage"
+    },
+    {
+      "filename" : "Ice.arreferenceimage"
     },
     {
       "filename" : "Lava.arreferenceimage"
     },
     {
-      "filename" : "Pedra.arreferenceimage"
+      "filename" : "Metal.arreferenceimage"
     },
     {
-      "filename" : "Poeira.arreferenceimage"
+      "filename" : "Moon.arreferenceimage"
     },
     {
-      "filename" : "Terra.arreferenceimage"
+      "filename" : "Rain.arreferenceimage"
+    },
+    {
+      "filename" : "Sand.arreferenceimage"
+    },
+    {
+      "filename" : "Seed.arreferenceimage"
+    },
+    {
+      "filename" : "Stone.arreferenceimage"
+    },
+    {
+      "filename" : "Sun.arreferenceimage"
+    },
+    {
+      "filename" : "Tree.arreferenceimage"
+    },
+    {
+      "filename" : "Water.arreferenceimage"
+    },
+    {
+      "filename" : "Wood.arreferenceimage"
     }
   ]
 }

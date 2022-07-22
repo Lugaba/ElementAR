@@ -23,10 +23,13 @@
 		DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DF8D0D78284E8C9500355702 /* Experience.rcproject */; };
 		DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7A284E8C9700355702 /* Assets.xcassets */; };
 		DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */; };
-		DF9FBA18286A16B400711ED7 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBA17286A16B400711ED7 /* TextView.swift */; };
-		DFABBBED28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */; };
+		DFA808D52878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFA808D32878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf */; };
+		DFD85F112889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD85F102889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */; };
+		DFD85F142889CA8500308B6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFD85F162889CA8500308B6C /* Localizable.strings */; };
+		DFD85F192889CAB600308B6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFD85F1B2889CAB600308B6C /* Localizable.strings */; };
 		DFDD9BF52867449B0060B097 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDD9BF42867449B0060B097 /* StoreKit.framework */; };
 		DFDD9BF8286744D00060B097 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDD9BF7286744D00060B097 /* StoreManager.swift */; };
+		DFEA8E7A2885C15100C5A277 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFEA8E7C2885C15100C5A277 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,10 +51,13 @@
 		DF8D0D7A284E8C9700355702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF8D0D84284E8F5300355702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		DF9FBA17286A16B400711ED7 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
-		DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.ElementarDeck.pdf; sourceTree = "<group>"; };
+		DFA808D32878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.FreeDeck.pdf; sourceTree = "<group>"; };
+		DFD85F102889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.ElementarDeck.pdf; sourceTree = "<group>"; };
+		DFD85F152889CA8500308B6C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFD85F1A2889CAB600308B6C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DFDD9BF42867449B0060B097 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DFDD9BF7286744D00060B097 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		DFEA8E7B2885C15100C5A277 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,6 @@
 				DF7A7E212860D98900F5D0A9 /* ItemStoreView.swift */,
 				DF1115C22860E9AC00F352D1 /* StoreView.swift */,
 				DF7BC416286A21D10051AD1A /* OnBoardingView.swift */,
-				DF9FBA17286A16B400711ED7 /* TextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 		DF8D0D73284E8C9500355702 /* POC-ARswiftui */ = {
 			isa = PBXGroup;
 			children = (
+				DFEA8E772885C12A00C5A277 /* Localization */,
 				DFDD9BF6286744BD0060B097 /* in-appPurchase */,
 				C830325F28510A5000683C6F /* Utils */,
 				C830325E28510A3000683C6F /* Structs */,
@@ -128,7 +134,8 @@
 				DF14D26A2851160800F0AC6E /* ARViewContainer.swift */,
 				DF8D0D78284E8C9500355702 /* Experience.rcproject */,
 				DF8D0D7A284E8C9700355702 /* Assets.xcassets */,
-				DFABBBEC28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */,
+				DFD85F102889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */,
+				DFA808D32878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf */,
 				DF8D0D7C284E8C9700355702 /* Preview Content */,
 			);
 			path = "POC-ARswiftui";
@@ -156,6 +163,16 @@
 				DFDD9BF7286744D00060B097 /* StoreManager.swift */,
 			);
 			path = "in-appPurchase";
+			sourceTree = "<group>";
+		};
+		DFEA8E772885C12A00C5A277 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DFEA8E7C2885C15100C5A277 /* Localizable.strings */,
+				DFD85F162889CA8500308B6C /* Localizable.strings */,
+				DFD85F1B2889CAB600308B6C /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +217,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
+				es,
+				"zh-Hant",
 			);
 			mainGroup = DF8D0D68284E8C9500355702;
 			productRefGroup = DF8D0D72284E8C9500355702 /* Products */;
@@ -216,9 +236,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEA8E7A2885C15100C5A277 /* Localizable.strings in Resources */,
+				DFD85F192889CAB600308B6C /* Localizable.strings in Resources */,
+				DFA808D52878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf in Resources */,
+				DFD85F112889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */,
 				DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */,
+				DFD85F142889CA8500308B6C /* Localizable.strings in Resources */,
 				DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */,
-				DFABBBED28639147000C6616 /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +262,6 @@
 				DF8D0D79284E8C9500355702 /* Experience.rcproject in Sources */,
 				DF14D26B2851160800F0AC6E /* ARViewContainer.swift in Sources */,
 				C810FF27284FBF3B00B4BCAF /* ColorExtension.swift in Sources */,
-				DF9FBA18286A16B400711ED7 /* TextView.swift in Sources */,
 				C830326328510B3200683C6F /* ButtonView.swift in Sources */,
 				DF7BC417286A21D10051AD1A /* OnBoardingView.swift in Sources */,
 				DF765B1C28637F250049ACB0 /* PackageContent.swift in Sources */,
@@ -249,6 +272,33 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DFD85F162889CA8500308B6C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFD85F152889CA8500308B6C /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DFD85F1B2889CAB600308B6C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFD85F1A2889CAB600308B6C /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DFEA8E7C2885C15100C5A277 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFEA8E7B2885C15100C5A277 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DF8D0D7F284E8C9700355702 /* Debug */ = {
@@ -378,7 +428,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "POC-ARswiftui/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ElementAR;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to create AR";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -413,7 +463,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "POC-ARswiftui/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ElementAR;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to create AR";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;

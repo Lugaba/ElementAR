@@ -148,5 +148,180 @@
     "libraryIdentifier" : "ed8a57a9289afe0d07af9c09333d4460",
     "format" : "model",
     "displayName" : "Energia.usdz"
+  },
+  {
+    "libraryIdentifier" : "b80ed1204a2a00b0afda58cfe41f0cbf",
+    "format" : "model",
+    "displayName" : "Cristal.usdz"
+  },
+  {
+    "libraryIdentifier" : "d20bb6a8e665c951b9da145ed23e0c97",
+    "format" : "model",
+    "displayName" : "Obsidiana.usdz"
+  },
+  {
+    "libraryIdentifier" : "1c842f17ca1dfa40ab24d046aaeb72cf",
+    "format" : "model",
+    "displayName" : "lua.usdz"
+  },
+  {
+    "libraryIdentifier" : "362a99573aa1a40aa6b5b57043a3dfea",
+    "format" : "model",
+    "displayName" : "aço.usdz"
+  },
+  {
+    "libraryIdentifier" : "fa6ee2203fe5d8515928e4a352815260",
+    "format" : "model",
+    "displayName" : "Arcoiris.usdz"
+  },
+  {
+    "libraryIdentifier" : "b20c9470ffc007f96912cc9e5c72869c",
+    "format" : "model",
+    "displayName" : "Areia.usdz"
+  },
+  {
+    "libraryIdentifier" : "c7e43ef9995e246ef302b06c22d352ba",
+    "format" : "model",
+    "displayName" : "arenito.usdz"
+  },
+  {
+    "libraryIdentifier" : "7022fc993513d56eeaabe309cfae5b68",
+    "format" : "model",
+    "displayName" : "argila.usdz"
+  },
+  {
+    "libraryIdentifier" : "0e9b63ed069fa2e68f3f81efc02cb1d4",
+    "format" : "model",
+    "displayName" : "carvao.usdz"
+  },
+  {
+    "libraryIdentifier" : "1d7da2e673b5b63ef898e466badacb6a",
+    "format" : "model",
+    "displayName" : "Cimento.usdz"
+  },
+  {
+    "libraryIdentifier" : "c3047e9ec964a0d4722effb7dddac051",
+    "format" : "model",
+    "displayName" : "Esmeralda.usdz"
+  },
+  {
+    "libraryIdentifier" : "7481100b19054379321180055a927efa",
+    "format" : "model",
+    "displayName" : "Rubi.usdz"
+  },
+  {
+    "libraryIdentifier" : "18c5353b5f3bcf55d9a6fb5b6cff388f",
+    "format" : "model",
+    "displayName" : "Safira.usdz"
+  },
+  {
+    "libraryIdentifier" : "d006f6957008eaea8dfc4fef5be1a57d",
+    "format" : "model",
+    "displayName" : "gelo.usdz"
+  },
+  {
+    "libraryIdentifier" : "797dbcf6047d21558dfdff0362203258",
+    "format" : "model",
+    "displayName" : "Neve.usdz"
+  },
+  {
+    "libraryIdentifier" : "17f4a2db12a386e5b3d3451b7af57995",
+    "format" : "model",
+    "displayName" : "Papel.usdz"
+  },
+  {
+    "libraryIdentifier" : "e06c42ea1498b4f719b1394bc96ff878",
+    "format" : "model",
+    "displayName" : "Petroleo.usdz"
+  },
+  {
+    "libraryIdentifier" : "cbaa45771a7f29a4a608ff54e25f2b1e",
+    "format" : "model",
+    "displayName" : "PlanetaTerra.usdz"
+  },
+  {
+    "libraryIdentifier" : "3a532b03b1679c4d8dd122b6b2a9d536",
+    "format" : "model",
+    "displayName" : "Terra.usdz"
+  },
+  {
+    "libraryIdentifier" : "fae77458020d4b2cc8e5a145f88ab5d9",
+    "format" : "model",
+    "displayName" : "Bomba.usdz"
+  },
+  {
+    "libraryIdentifier" : "c8f1409316fb4e32ead9fa8816a0074a",
+    "format" : "model",
+    "displayName" : "Fire.usdz"
+  },
+  {
+    "libraryIdentifier" : "d3953d9212d77621fa59b453b589dffa",
+    "format" : "model",
+    "displayName" : "Smoke.usdz"
+  },
+  {
+    "libraryIdentifier" : "f733e02e92155cebf9b48d47267f0288",
+    "format" : "model",
+    "displayName" : "Madeira.usdz"
+  },
+  {
+    "libraryIdentifier" : "262d1c5de16e3aa9bc8b74f21ee863e0",
+    "format" : "model",
+    "displayName" : "Mercurio.usdz"
+  },
+  {
+    "libraryIdentifier" : "436f2ed124e523c73d6ec748873d72aa",
+    "format" : "model",
+    "displayName" : "Metal.usdz"
+  },
+  {
+    "libraryIdentifier" : "aba3a81cfc8924bb1b468739e73a5149",
+    "format" : "model",
+    "displayName" : "Ouro.usdz"
+  },
+  {
+    "libraryIdentifier" : "e4469abf1dbe8a0b4b356ae7e90a3bb3",
+    "format" : "model",
+    "displayName" : "Tijolo.usdz"
+  },
+  {
+    "libraryIdentifier" : "f929dca3239d3c9ec61d658ac8972cdc",
+    "format" : "model",
+    "displayName" : "Vapor.usdz"
+  },
+  {
+    "libraryIdentifier" : "c86f544009a557d1e88679b7a31f624d",
+    "format" : "model",
+    "displayName" : "Sun.usdz"
+  },
+  {
+    "libraryIdentifier" : "5b77f3bfba181caa3cf678545d74ebbc",
+    "format" : "model",
+    "displayName" : "Seed.usdz"
+  },
+  {
+    "libraryIdentifier" : "5737cfc831ef61f6748ef52a37879a40",
+    "format" : "model",
+    "displayName" : "Gunpowder.usdz"
+  },
+  {
+    "libraryIdentifier" : "8f44d4ac3771ff668b225b8bfe9c5018",
+    "format" : "model",
+    "displayName" : "Grass.usdz"
+  },
+  {
+    "libraryIdentifier" : "1edeac007796a3e9376341568e33d5f4",
+    "format" : "model",
+    "displayName" : "Glass.usdz"
+  },
+  {
+    "libraryIdentifier" : "37805ec5b7f1ed5c73d46b2daaf44a51",
+    "format" : "model",
+    "displayName" : "Tree.usdz"
+  },
+  {
+    "libraryIdentifier" : "07e8996d8fe48eca2d104890a78b73c9",
+    "format" : "model",
+    "displayName" : "Blade.usdz"
   }
 ]
