@@ -50,7 +50,6 @@ struct ARViewContainer: UIViewRepresentable {
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
             for anchor in anchors {
                 guard let imageAnchor = anchor as? ARImageAnchor else { return }
-                
                 if let imageName = imageAnchor.name {
                     var cartaObjeto = ""
                     let entity = AnchorEntity(anchor: imageAnchor)
@@ -69,14 +68,14 @@ struct ARViewContainer: UIViewRepresentable {
                             if isBought {
                                 cartaObjeto = imageName
                             } else {
-                                cartaObjeto = "blocked"
+                                cartaObjeto = String(localized: "Blocked")
                             }
                         }
                     } else {
                         if isBought {
-                            cartaObjeto = "unknow"
+                            cartaObjeto = String(localized: "Unknown")
                         } else {
-                            cartaObjeto = "blocked"
+                            cartaObjeto = String(localized: "Blocked")
                         }
                     }
                     entidadesDict[imageName] = entity
@@ -98,9 +97,9 @@ struct ARViewContainer: UIViewRepresentable {
         
         func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
             for anchor in anchors {
-                if let anchorName = entidadesDict[anchor.name!], let removeMix = anchorName.findEntity(named: "blocked") {
+                if let anchorName = entidadesDict[anchor.name!], let removeMix = anchorName.findEntity(named: String(localized: "Blocked")) {
                     self.isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
-                    if let scene = scene, let obj = scene.findEntity(named: "unknow"), isBought {
+                    if let scene = scene, let obj = scene.findEntity(named: String(localized: "Unknown")), isBought {
                         anchorName.removeChild(removeMix)
                         objetos.remove(at: objetos.firstIndex(of: removeMix)!)
                         let objClone = obj.clone(recursive: true)
@@ -166,7 +165,7 @@ struct ARViewContainer: UIViewRepresentable {
                             }
                             
                             self.isBought = UserDefaults.standard.bool(forKey: "lucaHummel.elementar.Store.IAP.ElementarDeck")
-                            if let anchorMix = entidadesDict[mixResult], let removeMix = anchorMix.findEntity(named: "unknow") ?? anchorMix.findEntity(named: "blocked"), isBought {
+                            if let anchorMix = entidadesDict[mixResult], let removeMix = anchorMix.findEntity(named: String(localized: "Unknown")) ?? anchorMix.findEntity(named: String(localized: "Blocked")), isBought {
                                 anchorMix.removeChild(removeMix)
                                 objetos.remove(at: objetos.firstIndex(of: removeMix)!)
                                 let objClone = obj.clone(recursive: true)

@@ -35,7 +35,7 @@ struct CollectionCellView: View {
                         .resizable()
                         .scaledToFit()
                     Spacer()
-                    Text(name)
+                    Text(LocalizedStringKey(name))
                         .padding(.horizontal)
                         .background(Capsule().fill(Color.greyElementar))
                 }   .font(.system(.subheadline, design: .rounded) .weight(.bold))

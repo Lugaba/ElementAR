@@ -25,11 +25,11 @@
 		DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8D0D7D284E8C9700355702 /* Preview Assets.xcassets */; };
 		DFA808D52878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFA808D32878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf */; };
 		DFD85F112889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD85F102889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */; };
-		DFD85F142889CA8500308B6C /* LocalizableESP.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFD85F162889CA8500308B6C /* LocalizableESP.strings */; };
-		DFD85F192889CAB600308B6C /* LocalizableCHINES.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFD85F1B2889CAB600308B6C /* LocalizableCHINES.strings */; };
+		DFD85F142889CA8500308B6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFD85F162889CA8500308B6C /* Localizable.strings */; };
+		DFD85F192889CAB600308B6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFD85F1B2889CAB600308B6C /* Localizable.strings */; };
 		DFDD9BF52867449B0060B097 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDD9BF42867449B0060B097 /* StoreKit.framework */; };
 		DFDD9BF8286744D00060B097 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDD9BF7286744D00060B097 /* StoreManager.swift */; };
-		DFEA8E7A2885C15100C5A277 /* LocalizablePT.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFEA8E7C2885C15100C5A277 /* LocalizablePT.strings */; };
+		DFEA8E7A2885C15100C5A277 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFEA8E7C2885C15100C5A277 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,11 +53,11 @@
 		DF8D0D84284E8F5300355702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DFA808D32878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.FreeDeck.pdf; sourceTree = "<group>"; };
 		DFD85F102889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lucaHummel.elementar.Store.IAP.ElementarDeck.pdf; sourceTree = "<group>"; };
-		DFD85F152889CA8500308B6C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LocalizableESP.strings; sourceTree = "<group>"; };
-		DFD85F1A2889CAB600308B6C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LocalizableCHINES.strings"; sourceTree = "<group>"; };
+		DFD85F152889CA8500308B6C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFD85F1A2889CAB600308B6C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DFDD9BF42867449B0060B097 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DFDD9BF7286744D00060B097 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
-		DFEA8E7B2885C15100C5A277 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LocalizablePT.strings"; sourceTree = "<group>"; };
+		DFEA8E7B2885C15100C5A277 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +168,9 @@
 		DFEA8E772885C12A00C5A277 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				DFEA8E7C2885C15100C5A277 /* LocalizablePT.strings */,
-				DFD85F162889CA8500308B6C /* LocalizableESP.strings */,
-				DFD85F1B2889CAB600308B6C /* LocalizableCHINES.strings */,
+				DFEA8E7C2885C15100C5A277 /* Localizable.strings */,
+				DFD85F162889CA8500308B6C /* Localizable.strings */,
+				DFD85F1B2889CAB600308B6C /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -236,12 +236,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFEA8E7A2885C15100C5A277 /* LocalizablePT.strings in Resources */,
-				DFD85F192889CAB600308B6C /* LocalizableCHINES.strings in Resources */,
+				DFEA8E7A2885C15100C5A277 /* Localizable.strings in Resources */,
+				DFD85F192889CAB600308B6C /* Localizable.strings in Resources */,
 				DFA808D52878A5A600DAB169 /* lucaHummel.elementar.Store.IAP.FreeDeck.pdf in Resources */,
 				DFD85F112889C6EF00308B6C /* lucaHummel.elementar.Store.IAP.ElementarDeck.pdf in Resources */,
 				DF8D0D7E284E8C9700355702 /* Preview Assets.xcassets in Resources */,
-				DFD85F142889CA8500308B6C /* LocalizableESP.strings in Resources */,
+				DFD85F142889CA8500308B6C /* Localizable.strings in Resources */,
 				DF8D0D7B284E8C9700355702 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,28 +274,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DFD85F162889CA8500308B6C /* LocalizableESP.strings */ = {
+		DFD85F162889CA8500308B6C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DFD85F152889CA8500308B6C /* es */,
 			);
-			name = LocalizableESP.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		DFD85F1B2889CAB600308B6C /* LocalizableCHINES.strings */ = {
+		DFD85F1B2889CAB600308B6C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DFD85F1A2889CAB600308B6C /* zh-Hant */,
 			);
-			name = LocalizableCHINES.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		DFEA8E7C2885C15100C5A277 /* LocalizablePT.strings */ = {
+		DFEA8E7C2885C15100C5A277 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DFEA8E7B2885C15100C5A277 /* pt-BR */,
 			);
-			name = LocalizablePT.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

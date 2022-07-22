@@ -298,5 +298,30 @@
     "libraryIdentifier" : "5b77f3bfba181caa3cf678545d74ebbc",
     "format" : "model",
     "displayName" : "Seed.usdz"
+  },
+  {
+    "libraryIdentifier" : "5737cfc831ef61f6748ef52a37879a40",
+    "format" : "model",
+    "displayName" : "Gunpowder.usdz"
+  },
+  {
+    "libraryIdentifier" : "8f44d4ac3771ff668b225b8bfe9c5018",
+    "format" : "model",
+    "displayName" : "Grass.usdz"
+  },
+  {
+    "libraryIdentifier" : "1edeac007796a3e9376341568e33d5f4",
+    "format" : "model",
+    "displayName" : "Glass.usdz"
+  },
+  {
+    "libraryIdentifier" : "37805ec5b7f1ed5c73d46b2daaf44a51",
+    "format" : "model",
+    "displayName" : "Tree.usdz"
+  },
+  {
+    "libraryIdentifier" : "07e8996d8fe48eca2d104890a78b73c9",
+    "format" : "model",
+    "displayName" : "Blade.usdz"
   }
 ]
